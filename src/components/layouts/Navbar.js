@@ -7,62 +7,83 @@ function Navbar() {
   const handleToggle = () => setIsOpen(!isOpen);
 
   const navItems = [
-    'home',
-    'about',
-    'our services',
-    'our projects',
-    'contact us',
-    'get in touch',
+    { name: 'home', href: '/' },
+    { name: 'about', href: '/about' },
+    { name: 'our services', href: '/our-services' },
+    { name: 'our projects', href: '/our-projects' },
+    { name: 'contact us', href: '/contact-us' },
+    { name: 'get in touch', href: '/get-in-touch' },
   ];
   const isLast = navItems.length - 1;
 
   return (
-    <header className='w-screen h-24  bg-mainNavColor p-4  '>
+    <nav
+      className={`w-screen transform duration-500 ${
+        isOpen ? 'h-full' : 'h-24'
+      } z-50 bg-mainNavColor p-4  `}
+    >
       {/* set max size */}
-      <nav className='flex w-full md:max-w-6xl mx-auto h-10 items-center justify-between text-mainTxtColor '>
+      <div
+        className={`flex w-full h-full flex-wrap z-30 md:max-w-7xl mx-auto items-center justify-between text-mainTxtColor `}
+      >
         {/* logo */}
         <div>
           <Link className='text-5xl z-10' href={'/'}>
             LOGO
           </Link>
         </div>
-
+        <span
+          onClick={handleToggle}
+          className='lg:hidden cursor-pointer text-2xl'
+        >
+          {isOpen ? <HiX /> : <HiMenu />}
+        </span>
         {/* logo */}
         <ul
-          className={` bg-mainNavColor z-0 w-screen mx-auto h-fit transform duration-500  p-7 ${
-            isOpen
-              ? ' translate-y-[210px]  absolute left-0'
-              : '-translate-y-[1000px] absolute left-0'
+          className={` bg-mainNavColor w-full transform duration-700  p-7 ${
+            isOpen ? 'block ' : 'hidden'
           }
-          md:list-disc
-          
+          lg:list-disc
+          lg:flex 
+          lg:items-center
+          lg:justify-center
+          lg:w-4/6
+          lg:translate-y-0 
+          lg:relative 
+          lg:p-0
+          lg:m-0
+          lg:z-10
           `}
         >
           {navItems.map((item, idx) => {
-            const joinedItems = item.split(' ').join('-');
             return (
               <li
                 className={`capitalize py-3 border-b hover:bg-gray-950 w-full ${
                   isLast === idx &&
                   'bg-getInTouch border-none rounded-3xl my-2 p-0 hover:bg-mainFooterColor'
-                } `}
-                key={item}
+                } 
+                lg:border-none
+                lg:text-center
+                lg:px-0
+                lg:m-0
+                lg:w-3/4
+                `}
+                key={item.name}
               >
                 <Link
-                  className={`pl-3 w-full ${isLast === idx && 'px-0'}`}
-                  href={`/${item === 'home' ? '' : joinedItems}`}
+                  className={`pl-3 w-screen lg:p-0 ${
+                    isLast === idx && 'px-0 lg:p-0 '
+                  }`}
+                  href={item.href}
                 >
-                  {item}
+                  {item.name}
                 </Link>
               </li>
             );
           })}
         </ul>
-        <span onClick={handleToggle} className=' cursor-pointer text-2xl'>
-          {isOpen ? <HiX /> : <HiMenu />}
-        </span>
-      </nav>
-    </header>
+      </div>
+    </nav>
   );
 }
 
