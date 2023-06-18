@@ -1,30 +1,33 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { HiX, HiMenu } from 'react-icons/hi';
+
+export const navItems = [
+  { name: 'home', href: '/' },
+  { name: 'about', href: '/about' },
+  { name: 'our services', href: '/our-services' },
+  { name: 'our projects', href: '/our-projects' },
+  { name: 'contact us', href: '/contact-us' },
+  { name: 'get in touch', href: '/get-in-touch' },
+];
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => setIsOpen(!isOpen);
 
-  const navItems = [
-    { name: 'home', href: '/' },
-    { name: 'about', href: '/about' },
-    { name: 'our services', href: '/our-services' },
-    { name: 'our projects', href: '/our-projects' },
-    { name: 'contact us', href: '/contact-us' },
-    { name: 'get in touch', href: '/get-in-touch' },
-  ];
   const isLast = navItems.length - 1;
 
   return (
     <nav
-      className={`w-screen transform duration-500 ${
-        isOpen ? 'h-full' : 'h-24'
-      } z-50 bg-mainNavColor p-4  `}
+      className={`w-full  
+       z-50 bg-mainNavColor p-4  `}
     >
       {/* set max size */}
       <div
-        className={`flex w-full h-full flex-wrap z-30 md:max-w-7xl mx-auto items-center justify-between text-mainTxtColor `}
+        className={` transition-all duration-300 ${
+          isOpen ? 'h-full' : 'h-fit'
+        } flex w-full flex-wrap md:max-w-7xl mx-auto items-center justify-between text-mainTxtColor `}
       >
         {/* logo */}
         <div>
@@ -71,7 +74,7 @@ function Navbar() {
                 key={item.name}
               >
                 <Link
-                  className={`pl-3 w-screen lg:p-0 ${
+                  className={`pl-3 w-full block lg:p-0 ${
                     isLast === idx && 'px-0 lg:p-0 '
                   }`}
                   href={item.href}
