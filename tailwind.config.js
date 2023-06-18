@@ -20,6 +20,10 @@ module.exports = {
         secFooterColor: '#0B0B0B',
         getInTouch: '#7E7F7E',
       },
+      // for fixed bg we need to use this method
+      backgroundImage: {
+        contactUsBg: 'url(../../public/yannick.jpg)',
+      },
     },
   },
   plugins: [],

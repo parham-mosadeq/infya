@@ -1,9 +1,12 @@
 import ContactsInfo from '../layouts/ContactsInfo';
 import ContactUsForm from '../modules/contact-us/ContactUsForm';
-
+import ContactUsProfile from '../modules/contact-us/ContactUsProfile';
 function ContactUsPage() {
   return (
-    <div className=' min-h-screen mx-auto w-full bg-mainAboutColor'>
+    <div className='relative min-h-screen z-20 mx-auto w-full bg-mainAboutColor'>
+      {/* bg  */}
+      <ContactUsProfile />
+      {/* bg  */}
       <div className='px-4 max-w-6xl mx-auto  w-full'>
         <h1 className='text-mainTxtColor capitalize py-10 font-light tracking-widest text-xl'>
           send a message

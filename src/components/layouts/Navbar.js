@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 import { HiX, HiMenu } from 'react-icons/hi';
 
 export const navItems = [
@@ -13,10 +14,14 @@ export const navItems = [
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const router = useRouter();
   const handleToggle = () => setIsOpen(!isOpen);
-
+  // getting last index of our navItems  
   const isLast = navItems.length - 1;
+
+  useEffect(() => {
+    handleToggle(false);
+  }, [router.pathname]);
 
   return (
     <nav
@@ -25,7 +30,7 @@ function Navbar() {
     >
       {/* set max size */}
       <div
-        className={` transition-all duration-300 ${
+        className={` transition-[height] duration-300 ${
           isOpen ? 'h-full' : 'h-fit'
         } flex w-full flex-wrap md:max-w-7xl mx-auto items-center justify-between text-mainTxtColor `}
       >
