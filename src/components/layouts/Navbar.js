@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { HiX, HiMenu } from 'react-icons/hi';
+import { FaCircle } from 'react-icons/fa';
 
 export const navItems = [
   { name: 'home', href: '/' },
@@ -16,7 +17,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const handleToggle = () => setIsOpen(!isOpen);
-  // getting last index of our navItems  
+  // getting last index of our navItems
   const isLast = navItems.length - 1;
 
   useEffect(() => {
@@ -51,11 +52,11 @@ function Navbar() {
           className={` bg-mainNavColor w-full transform duration-700  p-7 ${
             isOpen ? 'block ' : 'hidden'
           }
-          lg:list-disc
           lg:flex 
           lg:items-center
           lg:justify-center
-          lg:w-4/6
+          lg:w-10/12
+          lg:mx-auto
           lg:translate-y-0 
           lg:relative 
           lg:p-0
@@ -66,21 +67,28 @@ function Navbar() {
           {navItems.map((item, idx) => {
             return (
               <li
-                className={`capitalize py-3 border-b hover:bg-gray-950 w-full ${
+                className={`capitalize font-light  py-3 border-b hover:bg-gray-950 w-full ${
                   isLast === idx &&
                   'bg-getInTouch border-none rounded-3xl my-2 p-0 hover:bg-mainFooterColor'
                 } 
                 lg:border-none
                 lg:text-center
+                lg:flex lg:flex-row-reverse lg:items-center lg:justify-around 
                 lg:px-0
-                lg:m-0
+                lg:mx-1
                 lg:w-3/4
                 `}
                 key={item.name}
               >
+                <FaCircle
+                  className={`hidden ${
+                    isLast === idx && 'lg:hidden'
+                  } lg:block lg:text-xs lg:font-extralight `}
+                />
+
                 <Link
-                  className={`pl-3 w-full block lg:p-0 ${
-                    isLast === idx && 'px-0 lg:p-0 '
+                  className={`pl-3 lg:tracking-widest block w-full lg:w-fit lg:p-0 ${
+                    isLast === idx && 'px-0 lg:p-0 mx-auto'
                   }`}
                   href={item.href}
                 >
