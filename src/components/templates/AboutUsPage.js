@@ -1,3 +1,4 @@
+import TalkWithUs from '../layouts/TalkWithUs';
 import AboutUsInfo from '../modules/about-us/AboutUsInfo';
 import AboutUsProfile from '../modules/about-us/AboutUsProfile';
 import ContactUsProfile from '../modules/contact-us/ContactUsProfile';
@@ -14,6 +15,7 @@ function AboutUsPage() {
           <AboutUsInfo />
         </div>
       </div>
+      <TalkWithUs />
     </main>
   );
 }
