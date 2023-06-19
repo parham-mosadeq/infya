@@ -3,7 +3,7 @@ function AboutUsProfile() {
   return (
     <div className='block w-full h-full '>
       <Image
-        className='block mx-auto w-full h-full object-cover'
+        className='block w-full h-full object-cover'
         src='/yannick.jpg'
         width={500}
         height={500}

@@ -1,4 +1,4 @@
-function ContactUsProfile() {
+function ContactUsProfile({title}) {
   return (
     <>
       <div className=' relative h-36'>
@@ -9,7 +9,7 @@ function ContactUsProfile() {
           >
             <div className='max-w-6xl w-full h-full flex items-center justify-between mx-auto'>
               <p className='  text-3xl font-bold tracking-wider text-mainTxtColor  '>
-                Contact us
+                {title}
               </p>
               <p className=' text- font-bold tracking-wider text-mainTxtColor  '>
                 home / contact us

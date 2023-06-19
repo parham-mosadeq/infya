@@ -1,9 +1,9 @@
-import React from 'react';
+import HomePage from '@/components/templates/HomePage';
 
-export default function HomePage() {
+export default function Home() {
   return (
-    <div className='h-screen z-10 max-w-6xl mx-auto overflow-x-hidden'>
-      HomePage
-    </div>
+    <main className='min-h-screen  overflow-x-hidden'>
+      <HomePage />
+    </main>
   );
 }
