@@ -23,6 +23,7 @@ module.exports = {
       // for fixed bg we need to use this method
       backgroundImage: {
         contactUsBg: 'url(../../public/yannick.jpg)',
+        ourAppBg: 'url(../../public/ourApBG.jpg)',
       },
     },
   },

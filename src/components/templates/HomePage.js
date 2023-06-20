@@ -3,6 +3,7 @@ import AboutUsInfo from '../modules/about-us/AboutUsInfo';
 import AboutUsProfile from '../modules/about-us/AboutUsProfile';
 import Image from 'next/image';
 import OurDesign from '../modules/home/OurDesign';
+import OurApproach from '../modules/home/OurApproach';
 
 function HomePage() {
   return (
@@ -54,6 +55,11 @@ function HomePage() {
           <OurDesign />
         </>
         {/* OUR DESIGN & BUILD SERVICES */}
+
+        {/* OurApproach */}
+        
+        <OurApproach />
+        {/* OurApproach */}
       </article>
     </div>
   );
