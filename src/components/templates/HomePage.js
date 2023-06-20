@@ -28,7 +28,7 @@ function HomePage() {
               />
             </div>
           </div>
-          <div className='pb-10 lg:pb-0 lg:h-full'>
+          <div className='pb-10 px-4 lg:pb-0 lg:h-full'>
             <div className='text-mainTxtColor py-10 px-4 text-lg '>
               <h1 className='text-4xl capitalize mb-3 lg:h-full'>about us</h1>
               <p className='lg:h-full'>
@@ -64,7 +64,7 @@ function HomePage() {
         {/* view all projects */}
       </article>
       <div className='w-full'>
-        <TalkWithUs href={'/our-projects'} title='talk with us' />
+        <TalkWithUs href={'/our-projects'} title=' view all projects' />
       </div>
     </div>
   );
