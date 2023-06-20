@@ -1,15 +1,14 @@
 import Link from 'next/link';
-import AboutUsInfo from '../modules/about-us/AboutUsInfo';
-import AboutUsProfile from '../modules/about-us/AboutUsProfile';
 import Image from 'next/image';
 import OurDesign from '../modules/home/OurDesign';
 import OurApproach from '../modules/home/OurApproach';
+import TalkWithUs from '../layouts/TalkWithUs';
 
 function HomePage() {
   return (
     <div
       className='w-full
-     bg-mainAboutColor px-4'
+     bg-mainAboutColor '
     >
       <article className=' max-w-6xl w-full flex flex-col items-center  mx-auto justify-center'>
         {/* video */}
@@ -57,10 +56,16 @@ function HomePage() {
         {/* OUR DESIGN & BUILD SERVICES */}
 
         {/* OurApproach */}
-        
+
         <OurApproach />
         {/* OurApproach */}
+
+        {/* view all projects */}
+        {/* view all projects */}
       </article>
+      <div className='w-full'>
+        <TalkWithUs href={'/our-projects'} title='talk with us' />
+      </div>
     </div>
   );
 }

@@ -15,7 +15,7 @@ function AboutUsPage() {
           <AboutUsInfo />
         </div>
       </div>
-      <TalkWithUs />
+      <TalkWithUs href={'/contact-us'} title='talk with us' />
     </main>
   );
 }
