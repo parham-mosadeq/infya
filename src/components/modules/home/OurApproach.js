@@ -54,17 +54,19 @@ We draw floor plans, details, lighting and installation plans. We conduct materi
                   <div
                     onClick={() => handleItemClick(item.id)}
                     className={`
-                  ${pickDesc?.id === item.id && 'bg-none'}
+                  ${
+                    pickDesc?.id === item.id
+                     && ' bg-slate-400'
+                  }
                   w-48 h-48 flex items-center justify-center rounded-full 
                   transition-colors duration-500 cursor-pointer
                   text-mainNavColor hover:text-mainTxtColor
-                  bg-mainTxtColor border hover:border-mainNavColor hover:bg-mainNavColor mx-auto
+                   bg-mainTxtColor border hover:border-mainNavColor hover:bg-mainNavColor mx-auto
                   `}
                   >
                     <h3 className='text-center my-auto uppercase'>
                       {item.txt}
                     </h3>
-                    $
                     {pickDesc.id === item.id && (
                       <span className=' hidden lg:block lg:absolute -bottom-1/3 border-x border-4 border-mainTxtColor h-16'></span>
                     )}
@@ -73,7 +75,7 @@ We draw floor plans, details, lighting and installation plans. We conduct materi
               );
             })}
           </div>
-          <div className='my-10 border-t w-full mx-auto hidden lg:block'>
+          <div className='my-10 border-t w-full mx-auto hidden md:block px-4'>
             <p className=' w-full mx-auto text-center text-2xl text-mainTxtColor'>
               {pickDesc.desc}
             </p>
