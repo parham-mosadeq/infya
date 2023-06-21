@@ -128,7 +128,7 @@ smooth lines combine in a casual modern design.
                     <Image
                       className={` 
                        hover:scale-105 hover:blur-sm
-                       w-full mx-auto h-56 md:h-56 md:w-full 
+                       w-full mx-auto h-72 md:h-56 md:w-full 
                        transition duration-500 `}
                       src={item.image}
                       width={500}
@@ -149,10 +149,10 @@ smooth lines combine in a casual modern design.
                         <h4 className='capitalize font-light text-mainTxtColor text-lg w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[109px]'>
                           {item.title}
                         </h4>
-                        <p className='h-full mt-10 w-1/2 mx-auto md:w-3/4 lg:w-full md:text-sm lg:leading-tight leading-7 px-3 '>
+                        <p className='h-full w-full mt-10 mx-auto lg:w-full md:text-sm lg:leading-tight leading-7 px-3 '>
                           {shortDesc}...
                         </p>
-                        <div className='w-1/2 mx-auto'>
+                        <div className='w-1/2 mt-4 md:mt-7 mx-auto'>
                           <Link
                             href={item.href}
                             className='inline-block w-full mx-auto hover:bg-mainNavColor hover:border-mainNavColor transition duration-700 bg-inherit text-sm border px-5 py-2 mt-1 uppercase text-mainTxtColor font-light tracking-wider'
