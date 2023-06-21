@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import ourDesign from '../../../../data/OurDesDB.json';
+import ourDesign from '../../../../data/ourDesDB.json';
 function OurDesign() {
   const [onHover, setOnHover] = useState(false);
   const baseUrl = '/our-services';
