@@ -39,14 +39,15 @@ We draw floor plans, details, lighting and installation plans. We conduct materi
   const handleItemClick = (id) => setSelectItem(id);
 
   return (
-    <div className='h-fit w-screen bg-ourAppBg bg-no-repeat bg-center bg-fixed'>
+    // because of no-repeat our background doesn't stretch through whole screen
+    <div className='h-full bg-ourAppBg bg-no-repeat bg-center bg-fixed'>
       <article className='max-w-6xl mx-auto '>
-        <div className='border-b-2 w-full mx-auto my-10'>
+        <div className='border-b-2 w-full mx-auto  py-10'>
           <h1 className='text-4xl text-mainTxtColor text-center pb-10'>
             OUR APPROACH
           </h1>
         </div>
-        <section className='my-10 relative '>
+        <section className='py-10 relative '>
           <div className='lg:flex'>
             {items.map((item, idx) => {
               return (
@@ -54,10 +55,7 @@ We draw floor plans, details, lighting and installation plans. We conduct materi
                   <div
                     onClick={() => handleItemClick(item.id)}
                     className={`
-                  ${
-                    pickDesc?.id === item.id
-                     && ' bg-slate-400'
-                  }
+                  ${pickDesc?.id === item.id && ' bg-slate-400'}
                   w-48 h-48 flex items-center justify-center rounded-full 
                   transition-colors duration-500 cursor-pointer
                   text-mainNavColor hover:text-mainTxtColor
@@ -76,7 +74,7 @@ We draw floor plans, details, lighting and installation plans. We conduct materi
             })}
           </div>
           <div className='my-10 border-t w-full mx-auto hidden md:block px-4'>
-            <p className=' w-full mx-auto text-center text-2xl text-mainTxtColor'>
+            <p className=' w-full py-7 mx-auto text-center text-2xl text-mainTxtColor'>
               {pickDesc.desc}
             </p>
           </div>

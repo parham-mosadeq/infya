@@ -7,10 +7,10 @@ import TalkWithUs from '../layouts/TalkWithUs';
 function HomePage() {
   return (
     <div
-      className='w-full
-     bg-mainAboutColor '
+      className='
+     bg-mainAboutColor relative'
     >
-      <article className=' max-w-6xl w-full flex flex-col items-center  mx-auto justify-center'>
+      <article className='  max-w-6xl w-full flex flex-col items-center  mx-auto justify-center'>
         {/* video */}
         <div className='h-screen'>video</div>
         {/* video */}
@@ -57,12 +57,14 @@ function HomePage() {
 
         {/* OurApproach */}
 
-        <OurApproach />
         {/* OurApproach */}
 
         {/* view all projects */}
         {/* view all projects */}
       </article>
+      <div className='w-screen '>
+        <OurApproach />
+      </div>
       <div className='w-full'>
         <TalkWithUs href={'/our-projects'} title=' view all projects' />
       </div>
