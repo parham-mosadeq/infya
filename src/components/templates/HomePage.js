@@ -32,19 +32,18 @@ function HomePage() {
             <div className='text-mainTxtColor py-10 px-4 text-lg '>
               <h1 className='text-4xl capitalize mb-3 lg:h-full'>about us</h1>
               <p className='lg:h-full'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                officiis consequatur ex totam optio nobis obcaecati soluta
-                doloribus quasi nam? consequatur ex totam optio nobis obcaecati
-                soluta doloribus quasi nam? consequatur ex totam optio nobis
-                obcaecati soluta doloribus quasi nam? consequatur ex totam optio
+                We provide professional Engineering services with, architectural
+                & interior design, Home automation, and maintenance services
+                exclusively to the luxury retail sector and affiliated business
+                premises.
               </p>
+              <Link
+                href='/about'
+                className='self-start mt-10 block w-fit hover:bg-mainNavColor hover:border-mainNavColor transition duration-700 bg-inherit text-sm border px-7 py-1 my-5 uppercase text-mainTxtColor font-light tracking-wider'
+              >
+                read more
+              </Link>
             </div>
-            <Link
-              href='/about'
-              className='self-start  max-w-fit hover:bg-mainNavColor hover:border-mainNavColor transition duration-700 bg-inherit text-sm border px-7 py-1 my-5 uppercase text-mainTxtColor font-light tracking-wider'
-            >
-              read more
-            </Link>
           </div>
         </div>
         {/* about us */}
