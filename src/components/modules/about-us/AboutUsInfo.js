@@ -1,28 +1,47 @@
 function AboutUsInfo() {
   return (
-    <div className='text-mainTxtColor py-10 px-4 text-lg'>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae officiis
-        consequatur ex totam optio nobis obcaecati soluta doloribus quasi nam?
-        consequatur ex totam optio nobis obcaecati soluta doloribus quasi nam?
-        consequatur ex totam optio nobis obcaecati soluta doloribus quasi nam?
-        consequatur ex totam optio nobis obcaecati soluta doloribus quasi nam?
-        consequatur ex totam optio nobis obcaecati soluta doloribus quasi nam?
-        consequatur ex totam optio nobis obcaecati soluta doloribus quasi nam?
-        consequatur ex totam optio nobis obcaecati soluta doloribus quasi nam?
-        consequatur ex totam optio nobis obcaecati soluta doloribus quasi nam?
-        consequatur ex totam optio nobis obcaecati soluta doloribus quasi nam?
-        consequatur ex totam optio nobis obcaecati soluta doloribus quasi nam?
-        consequatur ex totam optio nobis obcaecati soluta doloribus quasi nam?
-        consequatur ex totam optio nobis obcaecati soluta doloribus quasi nam?
-        consequatur ex totam optio nobis obcaecati soluta doloribus quasi nam?
-        consequatur ex totam optio nobis obcaecati soluta doloribus quasi nam?
-        consequatur ex totam optio nobis obcaecati soluta doloribus quasi nam?
-        consequatur ex totam optio nobis obcaecati soluta doloribus quasi nam?
-        consequatur ex totam optio nobis obcaecati soluta doloribus quasi nam?
-        consequatur ex totam optio nobis obcaecati soluta doloribus quasi nam?
-      </p>
-    </div>
+    <section className='text-mainTxtColor py-10 px-4 text-lg'>
+      <div className='py-4'>
+        <h1 className='text-4xl capitalize pb-2'>About US</h1>
+        <p className='px-3'>
+          We provide professional Engineering services with, architectural &
+          interior design, Home automation, and maintenance services exclusively
+          to the luxury retail sector and affiliated business premises. With
+          years of experience and an interest in the future of architectural &
+          interior design, Home automation, and electrical & Mechanical
+          technology. Master Engineering was established in 2018. We have
+          successfully completed many projects all over the world over the years
+          and strive to be the best by offering excellent workmanship, value for
+          money, and customer service. We have delivered a number of creative
+          interiors for hospitality, healthcare, office, retail and residential
+          spaces, from design concept to handover. We work hand in hand with a
+          network of trusted partners in order to accommodate the most varied
+          and complex projects. Our interiors are focused on flexibility and
+          functionality without compromising on style and design. Our approach
+          is to create the most suitable designs with assorted architectural
+          features and subtle touches and refinement. We are a multicultural
+          team of passionate individuals dedicated to delivering a unique
+          project. This is always achieved through a tailored approach,
+          reflecting the client’s needs and aspirations. As a young professional
+          company, we have established a reputation in London and UAE Contractor
+          with very high standards
+        </p>{' '}
+      </div>
+      <div className='py-4'>
+        <h1 className='text-4xl capitalize pb-2'>Our Vision</h1>
+        <p className='px-3'>
+          At Master Engineering we have the vision to bring architectural &
+          interior design, Home Automation, and mechanical & electrical
+          installation, together to create a modern, fully integrated
+          environment. With the advancement in smartphones and technology, has
+          allowed us to use this technology to create an environment where
+          Luxury designs merge with electrical equipment is controlled by a
+          single smart device. There is continued research and development to
+          create energy-efficient smart automation and we keep fully up to date
+          on the latest technology to offer our clients.
+        </p>
+      </div>
+    </section>
   );
 }
 
