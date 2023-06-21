@@ -1,6 +1,6 @@
 function AboutUsInfo() {
   return (
-    <section className='text-mainTxtColor py-10 px-4 text-lg'>
+    <section className='min-h-screen text-mainTxtColor flex flex-col justify-center py-10 px-4 text-lg'>
       <div className='py-4'>
         <h1 className='text-4xl capitalize pb-2'>About US</h1>
         <p className='px-3'>
