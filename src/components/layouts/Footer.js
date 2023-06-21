@@ -6,14 +6,16 @@ function Footer() {
   return (
     <footer className='w-full m-0  mx-auto bg-mainFooterColor capitalize text-mainTxtColor  flex flex-col items-center justify-center'>
       <div className='max-w-6xl w-full flex flex-col gap-5 px-4 my-10 lg:grid lg:grid-cols-3'>
-        {/* logo */}
         <div>
-          <h1 className='text-4xl'>LOGO</h1>
+          <Link href='/' className='text-4xl'>
+            MASTER ENGINEERING
+          </Link>
           <p className='text-xs my-2 lg:text-lg'>
-            We are an architectural and interior design firm based in the UAE
-            and operating worldwide. We have delivered a number of creative
-            interiors for hospitality, healthcare, office, retail and
-            residential spaces, from design concept to handover.
+            Master Engineering is Located in London and Dubai. We provide
+            professional Engineering services with, architectural & interior
+            design, Home automation, and maintenance services exclusively to the
+            Residential, Commercial, luxury retail sector and affiliated
+            business premises.
           </p>
         </div>
         {/* logo */}
