@@ -5,33 +5,24 @@ function OurApproach() {
   const items = [
     {
       id: 1,
-      txt: 'open communication',
-      desc: `All our projects start with a clear conversation. In this way we gain insights into the building, the people who reside in it, and the needs as well as interests that play a role. We love open communication and try to collect as much information as possible in a pleasant manner until we have a clear picture of all the human, practical, technical and creative aspects involved.`,
+      txt: 'Clear Communication',
+      desc: `All our projects start with an open and clear conversation. In this way, we gain insights into the building, the people who reside in it, and the needs as well as interests that play a role. We try to collect as much information as possible in a gracious manner until we have a clear picture of all the human, practical, technical, and creative aspects involved.`,
     },
     {
       id: 2,
-      txt: 'SPATIAL EXPRESSION',
-      desc: `Together with our clients, partners and talents, we draw up a program of requirements. We do not tell clients what they should do, but together we determine the best strategy. We then translate this into a clear spatial concept that clearly reflects the identity of a customer. The concept then shows character and tells a story to the various users and /or target groups.`,
+      txt: 'Designing Your Space',
+      desc: `Together with our clients, partners, and talents, we draw up a program of requirements. We do not tell clients what they should do, but together we determine the best strategy. We then translate this into a clear Structural concept that clearly reflects the identity of a customer. `,
     },
     {
       id: 3,
-      txt: 'FROM IDEA TO SPACE',
-      desc: `
-      From the concept, we work out a design, step by step. The phases are:
-
--Sketch
--Preliminary
--Final
--and sometimes a technical design.
-
-We draw floor plans, details, lighting and installation plans. We conduct material research, propose acoustic solutions, choose products, furniture and upholstery. In short, everything needed for an integral architectural design.
-      `,
+      txt: 'Reality',
+      desc: `During the attainment of the project, we take the creative direction and guide all implementing parties. We have an extensive team of project managers, contractors, suppliers, and people who guarantee that the project is executed to perfection as assigned.`,
     },
-    {
-      id: 4,
-      txt: 'REALIZATION',
-      desc: 'During the realization of the project, we take the creative direction and guide all implementing parties. We have an extensive team of project managers, contractors, suppliers, and people who guarantee that the project is executed to perfection as assigned. For large scale projects, we often work with partners and consultants not only in the field of sustainability, acoustics, installations, and lighting, but also in collaboration with partner architects, designers and other innovative parties from around the world and within the creative industry.',
-    },
+    // {
+    //   id: 4,
+    //   txt: 'REALIZATION',
+    //   desc: 'During the realization of the project, we take the creative direction and guide all implementing parties. We have an extensive team of project managers, contractors, suppliers, and people who guarantee that the project is executed to perfection as assigned. For large scale projects, we often work with partners and consultants not only in the field of sustainability, acoustics, installations, and lighting, but also in collaboration with partner architects, designers and other innovative parties from around the world and within the creative industry.',
+    // },
   ];
 
   const pickDesc = items.find((item) => item.id === selectItem);
