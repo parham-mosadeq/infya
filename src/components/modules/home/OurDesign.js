@@ -3,60 +3,169 @@ import Link from 'next/link';
 import { useState } from 'react';
 function OurDesign() {
   const [onHover, setOnHover] = useState(false);
-  const title = 'RESIDENTIAL';
+  const designs = [
+    {
+      id: 1,
+      title: 'COMMUNITY DESIGN PRESENTATION AND BUILD ',
+      href: 'design-1',
+      image: '/images/image-1.png',
+      desc: `We deliver personalized interior design and build services for 
+residential projects across UAE and London region; a concierge 
+design service for those who want everything handled for them. 
+This luxury service includes the duration and management of every 
+detail of a project from concept to accessory styling as well as new 
+builds and renovations complete refurbishments, extensions, and 
+existing space conversions. We can offer a full design, installation, and
+commissioning service for all clients, and with our knowledge of electrical
+installation together with Testing, Audiovisual, and Environmental
+systems, we can complete any project from start to finish the
+requirement of any business
+`,
+    },
+    {
+      id: 2,
+      title: 'COMMERCIAL DESIGN PRESENTATION AND BUILD',
+      href: 'design-2',
+      image: '/images/image-2.png',
+      desc: `
+      We create a space that represents the origin of your brand each detail
+is crafted keeping the brand’s personality in mind so that it helps clients
+understand your business captures your brand values and connects your
+team. It can also have the power to transform employee well-being and 
+boost productivity. Our other commercial services are: 
+Retails 
+Hospitality
+Restaurants
+
+      `,
+    },
+    {
+      id: 3,
+      title: 'CUSTOM-MADE FURNITURE DESIGN',
+      href: 'design-3',
+      image: '/images/image-3.png',
+      desc: `
+      We design and customize furniture that blends with your 
+brand, using our aesthetic sense and creativity in response
+ to the taste of usage of that space. The right selection of 
+materials are carefully made by our range of talented designers 
+so that we can bring comfort to your life. Over the years of 
+experience, we are dedicated to the pursuit of beauty where 
+smooth lines combine in a casual modern design.
+
+      `,
+    },
+    {
+      id: 4,
+      title: 'CUSTOM-MADE FURNITURE DESIGN',
+      href: 'design-3',
+      image: '/images/image-3.png',
+      desc: `
+      We design and customize furniture that blends with your 
+brand, using our aesthetic sense and creativity in response
+ to the taste of usage of that space. The right selection of 
+materials are carefully made by our range of talented designers 
+so that we can bring comfort to your life. Over the years of 
+experience, we are dedicated to the pursuit of beauty where 
+smooth lines combine in a casual modern design.
+
+      `,
+    },
+    {
+      id: 5,
+      title: 'CUSTOM-MADE FURNITURE DESIGN',
+      href: 'design-3',
+      image: '/images/image-3.png',
+      desc: `
+      We design and customize furniture that blends with your 
+brand, using our aesthetic sense and creativity in response
+ to the taste of usage of that space. The right selection of 
+materials are carefully made by our range of talented designers 
+so that we can bring comfort to your life. Over the years of 
+experience, we are dedicated to the pursuit of beauty where 
+smooth lines combine in a casual modern design.
+
+      `,
+    },
+    {
+      id: 6,
+      title: 'CUSTOM-MADE FURNITURE DESIGN',
+      href: 'design-3',
+      image: '/images/image-3.png',
+      desc: `
+      We design and customize furniture that blends with your 
+brand, using our aesthetic sense and creativity in response
+ to the taste of usage of that space. The right selection of 
+materials are carefully made by our range of talented designers 
+so that we can bring comfort to your life. Over the years of 
+experience, we are dedicated to the pursuit of beauty where 
+smooth lines combine in a casual modern design.
+
+      `,
+    },
+  ];
+
   return (
     <>
-      <div className='w-full pb-20 mt-16 lg:mt-16 grid'>
+      <div className='w-full pb-20 mt-16 lg:mt-24 grid'>
         <h1 className='text-center border-b pb-4 text-3xl text-mainTxtColor tracking-wider '>
-          OUR DESIGN & BUILD SERVICES
+          Our Services - All the services you need, in one place
         </h1>
-        <article className='md:grid md:grid-cols-2 w-full lg:grid-cols-4'>
+        <article className=''>
           {/* projects */}
-          <div className='my-10 md:mx-2 md:w-full overflow-hidden transition duration-500 '>
-            <div
-              className='relative md:w-full'
-              onMouseEnter={() => setOnHover(true)}
-              onMouseLeave={() => setOnHover(false)}
-            >
-              <div>
-                <Image
-                  className={`${
-                    onHover && ' hover:scale-105 hover:blur-sm'
-                  } w-3/4 mx-auto h-56 md:h-56 md:w-full   transition duration-500 `}
-                  src='/yannick.jpg'
-                  width={200}
-                  height={190}
-                />
-                {!onHover && (
-                  <h4 className=' block text-mainTxtColor text-2xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
-                    {title}
-                  </h4>
-                )}
-                {onHover && (
-                  <div
-                    className='uppercase w-full block mx-auto text-center hover:blur-none transition duration-300 hover:bg-blur-sm text-mainNavColor
-                font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
-                  >
-                    <h4 className='uppercase text-mainTxtColor text-2xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[109px]'>
-                      {title}
+          <div className='my-10 md:grid md:gap-3 md:grid-cols-2 w-full lg:grid-cols-2 xl:grid-cols-4 md:mx-2 md:w-full overflow-hidden transition duration-500 '>
+            {designs.map((item) => {
+              const lastIndex = item.desc.length / 3;
+              const shortDesc = item.desc.slice(0, lastIndex);
+              return (
+                <div
+                  onMouseEnter={() => setOnHover(item.id)}
+                  onMouseLeave={() => setOnHover(false)}
+                  key={item.id}
+                  className='relative my-5 mx-auto w-[80vw] md:w-[45vw] xl:w-full'
+                >
+                  <div className='w-full overflow-hidden lg:w-full mx-auto'>
+                    <Image
+                      className={` 
+                       hover:scale-105 hover:blur-sm
+                       w-full mx-auto h-56 md:h-56 md:w-full 
+                       transition duration-500 `}
+                      src={item.image}
+                      width={500}
+                      height={500}
+                    />
+                    <h4
+                      className={`${
+                        onHover === item.id && 'hidden'
+                      } block w-full font-light px-1 text-center text-mainTxtColor  text-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2`}
+                    >
+                      {item.title}
                     </h4>
-                    <p className='h-full w-3/4 mx-auto md:w-3/4 lg:w-full md:text-sm lg:leading-tight leading-7 px-3 '>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ut nesciunt odit Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Ut nesciunt odit
-                    </p>
-                    <div className='w-1/2 mx-auto'>
-                      <Link
-                        href='/'
-                        className='inline-block w-full mx-auto hover:bg-mainNavColor hover:border-mainNavColor transition duration-700 bg-inherit text-sm border px-5 py-2 mt-5 uppercase text-mainTxtColor font-light tracking-wider'
+                    {onHover === item.id && (
+                      <div
+                        className='block w-full  mx-auto text-center hover:blur-none transition duration-300 hover:bg-blur-sm text-mainNavColor
+                    font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
                       >
-                        read more
-                      </Link>
-                    </div>
+                        <h4 className='capitalize font-light text-mainTxtColor text-lg w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[109px]'>
+                          {item.title}
+                        </h4>
+                        <p className='h-full mt-10 w-1/2 mx-auto md:w-3/4 lg:w-full md:text-sm lg:leading-tight leading-7 px-3 '>
+                          {shortDesc}...
+                        </p>
+                        <div className='w-1/2 mx-auto'>
+                          <Link
+                            href={item.href}
+                            className='inline-block w-full mx-auto hover:bg-mainNavColor hover:border-mainNavColor transition duration-700 bg-inherit text-sm border px-5 py-2 mt-1 uppercase text-mainTxtColor font-light tracking-wider'
+                          >
+                            read more
+                          </Link>
+                        </div>
+                      </div>
+                    )}
                   </div>
-                )}
-              </div>
-            </div>
+                </div>
+              );
+            })}
           </div>
         </article>
       </div>
