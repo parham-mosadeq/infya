@@ -1,110 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import ourDesign from '../../../../data/OurDesDB.json';
 function OurDesign() {
   const [onHover, setOnHover] = useState(false);
-  const designs = [
-    {
-      id: 1,
-      title: 'COMMUNITY DESIGN PRESENTATION AND BUILD ',
-      href: 'design-1',
-      image: '/images/image-1.png',
-      desc: `We deliver personalized interior design and build services for 
-residential projects across UAE and London region; a concierge 
-design service for those who want everything handled for them. 
-This luxury service includes the duration and management of every 
-detail of a project from concept to accessory styling as well as new 
-builds and renovations complete refurbishments, extensions, and 
-existing space conversions. We can offer a full design, installation, and
-commissioning service for all clients, and with our knowledge of electrical
-installation together with Testing, Audiovisual, and Environmental
-systems, we can complete any project from start to finish the
-requirement of any business
-`,
-    },
-    {
-      id: 2,
-      title: 'COMMERCIAL DESIGN PRESENTATION AND BUILD',
-      href: 'design-2',
-      image: '/images/image-2.png',
-      desc: `
-      We create a space that represents the origin of your brand each detail
-is crafted keeping the brand’s personality in mind so that it helps clients
-understand your business captures your brand values and connects your
-team. It can also have the power to transform employee well-being and 
-boost productivity. Our other commercial services are: 
-Retails 
-Hospitality
-Restaurants
-
-      `,
-    },
-    {
-      id: 3,
-      title: 'CUSTOM-MADE FURNITURE DESIGN',
-      href: 'design-3',
-      image: '/images/image-3.png',
-      desc: `
-      We design and customize furniture that blends with your 
-brand, using our aesthetic sense and creativity in response
- to the taste of usage of that space. The right selection of 
-materials are carefully made by our range of talented designers 
-so that we can bring comfort to your life. Over the years of 
-experience, we are dedicated to the pursuit of beauty where 
-smooth lines combine in a casual modern design.
-
-      `,
-    },
-    {
-      id: 4,
-      title: 'CUSTOM-MADE FURNITURE DESIGN',
-      href: 'design-3',
-      image: '/images/image-3.png',
-      desc: `
-      We design and customize furniture that blends with your 
-brand, using our aesthetic sense and creativity in response
- to the taste of usage of that space. The right selection of 
-materials are carefully made by our range of talented designers 
-so that we can bring comfort to your life. Over the years of 
-experience, we are dedicated to the pursuit of beauty where 
-smooth lines combine in a casual modern design.
-
-      `,
-    },
-    {
-      id: 5,
-      title: 'CUSTOM-MADE FURNITURE DESIGN',
-      href: 'design-3',
-      image: '/images/image-3.png',
-      desc: `
-      We design and customize furniture that blends with your 
-brand, using our aesthetic sense and creativity in response
- to the taste of usage of that space. The right selection of 
-materials are carefully made by our range of talented designers 
-so that we can bring comfort to your life. Over the years of 
-experience, we are dedicated to the pursuit of beauty where 
-smooth lines combine in a casual modern design.
-
-      `,
-    },
-    {
-      id: 6,
-      title: 'CUSTOM-MADE FURNITURE DESIGN',
-      href: 'design-3',
-      image: '/images/image-3.png',
-      desc: `
-      We design and customize furniture that blends with your 
-brand, using our aesthetic sense and creativity in response
- to the taste of usage of that space. The right selection of 
-materials are carefully made by our range of talented designers 
-so that we can bring comfort to your life. Over the years of 
-experience, we are dedicated to the pursuit of beauty where 
-smooth lines combine in a casual modern design.
-
-      `,
-    },
-  ];
-
+  const baseUrl = '/our-services';
+  const { designs } = ourDesign;
   return (
     <>
       <div className='w-full pb-20 mt-16 lg:mt-24 grid'>
@@ -133,6 +34,7 @@ smooth lines combine in a casual modern design.
                       src={item.image}
                       width={500}
                       height={500}
+                      alt={item.title}
                     />
                     <h4
                       className={`${
@@ -154,7 +56,10 @@ smooth lines combine in a casual modern design.
                         </p>
                         <div className='w-1/2 mt-4 md:mt-7 mx-auto'>
                           <Link
-                            href={item.href}
+                            href={`${baseUrl}/${item.href
+                              .toLowerCase()
+                              .split(' ')
+                              .join('-')}-${item.id}`}
                             className='inline-block w-full mx-auto hover:bg-mainNavColor hover:border-mainNavColor transition duration-700 bg-inherit text-sm border px-5 py-2 mt-1 uppercase text-mainTxtColor font-light tracking-wider'
                           >
                             read more

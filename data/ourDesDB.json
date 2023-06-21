@@ -1,0 +1,48 @@
+ 
+ {
+
+ "designs" : [
+    {
+      "id": 1,
+      "title": "COMMUNITY DESIGN PRESENTATION AND BUILD ",
+      "href": "COMMUNITY DESIGN PRESENTATION AND BUILD",
+      "image": "/images/ourDesign/image-1.png",
+      "desc": "We deliver personalized interior design and build services for residential projects across UAE and London region; a concierge design service for those who want everything handled for them. This luxury service includes the duration and management of every detail of a project from concept to accessory styling as well as new builds and renovations complete refurbishments, extensions, and existing space conversions. We can offer a full design, installation, andcommissioning service for all clients, and with our knowledge of electricalinstallation together with Testing, Audiovisual, and Environmentalsystems, we can complete any project from start to finish therequirement of any business"
+    },
+    {
+      "id": 2,
+      "title": "COMMERCIAL DESIGN PRESENTATION AND BUILD",
+      "href": "COMMERCIAL DESIGN PRESENTATION AND BUILD",
+      "image": "/images/ourDesign/image-2.png",
+      "desc": "We create a space that represents the origin of your brand each detail is crafted keeping the brand’s personality in mind so that it helps clients understand your business captures your brand values and connects your team. It can also have the power to transform employee well-being and  boost productivity. Our other commercial services are:  Retails  Hospitality Restaurants"
+    },
+    {
+      "id": 3,
+      "title": "CUSTOM-MADE FURNITURE DESIGN",
+      "href": "CUSTOM-MADE FURNITURE DESIGN",
+      "image": "/images/ourDesign/image-3.png",
+      "desc": "We design and customize furniture that blends with your brand, using our aesthetic sense and creativity in response to the taste of usage of that space. The right selection of materials are carefully made by our range of talented designers so that we can bring comfort to your life. Over the years of experience, we are dedicated to the pursuit of beauty where smooth lines combine in a casual modern design."
+    },
+    {
+      "id": 4,
+      "title": "CUSTOM-MADE FURNITURE DESIGN",
+      "href": "CUSTOM-MADE FURNITURE DESIGN",
+      "image": "/images/ourDesign/image-3.png",
+      "desc": "We design and customize furniture that blends with your brand, using our aesthetic sense and creativity in response to the taste of usage of that space. The right selection of materials are carefully made by our range of talented designers so that we can bring comfort to your life. Over the years of experience, we are dedicated to the pursuit of beauty where smooth lines combine in a casual modern design."
+    },
+    {
+      "id": 5,
+      "title": "CUSTOM-MADE FURNITURE DESIGN",
+      "href": "CUSTOM-MADE FURNITURE DESIGN",
+      "image": "/images/ourDesign/image-3.png",
+      "desc": "We design and customize furniture that blends with your brand, using our aesthetic sense and creativity in response to the taste of usage of that space. The right selection of materials are carefully made by our range of talented designers so that we can bring comfort to your life. Over the years of experience, we are dedicated to the pursuit of beauty where smooth lines combine in a casual modern design."
+    },
+    {
+      "id": 6,
+      "title": "CUSTOM-MADE FURNITURE DESIGN",
+      "href": "CUSTOM-MADE FURNITURE DESIGN",
+      "image": "/images/ourDesign/image-3.png",
+      "desc": "We design and customize furniture that blends with your brand, using our aesthetic sense and creativity in response to the taste of usage of that space. The right selection of materials are carefully made by our range of talented designers so that we can bring comfort to your life. Over the years of experience, we are dedicated to the pursuit of beauty where smooth lines combine in a casual modern design."
+    }
+  ]
+ }
