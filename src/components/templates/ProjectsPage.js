@@ -2,7 +2,7 @@ import ProjectsCats from '../modules/projects/ProjectsCats';
 
 function ProjectsPage() {
   return (
-    <main className='min-h-screen'>
+    <main className='h-fit'>
       <ProjectsCats />
     </main>
   );

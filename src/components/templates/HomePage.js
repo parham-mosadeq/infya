@@ -7,21 +7,18 @@ import ProjectsPage from './ProjectsPage';
 
 function HomePage() {
   return (
-    <div
-      className='
-     bg-mainAboutColor relative'
-    >
-      <article className='  max-w-6xl w-full flex flex-col items-center  mx-auto justify-center'>
+    <div className='h-full bg-mainAboutColor relative'>
+      <article className='  max-w-6xl w-full  flex flex-col items-center  mx-auto justify-center'>
         {/* video */}
         <div className='h-screen'>video</div>
         {/* video */}
 
         {/* about us */}
-        <div className='h-fit lg:h-[65vh] w-full grid grid-cols-1 lg:grid-cols-2 items-center gap-4'>
+        <div className='h-fit lg:h-[65vh] w-full grid grid-cols-1 lg:grid-cols-2 justify-center content-center items-center gap-4'>
           <div className='w-full p-0 m-0 mx-auto h-1/2 lg:h-full lg:w-[100%] self-end lg:self-center'>
             <div className='block w-full h-full '>
               <Image
-                className='block w-full h-full lg:h-1/2 object-cover'
+                className='block w-full h-full lg:h-3/4 object-cover'
                 src='/yannick.jpg'
                 width={500}
                 height={500}
@@ -38,6 +35,21 @@ function HomePage() {
                 exclusively to the luxury retail sector and affiliated business
                 premises.
               </p>
+              <div className='py-4'>
+                <h1 className='text-4xl capitalize pb-2'>Our Vision</h1>
+                <p className=' lg:h-full'>
+                  At Master Engineering we have the vision to bring
+                  architectural & interior design, Home Automation, and
+                  mechanical & electrical installation, together to create a
+                  modern, fully integrated environment. With the advancement in
+                  smartphones and technology, has allowed us to use this
+                  technology to create an environment where Luxury designs merge
+                  with electrical equipment is controlled by a single smart
+                  device. There is continued research and development to create
+                  energy-efficient smart automation and we keep fully up to date
+                  on the latest technology to offer our clients.
+                </p>
+              </div>
               <Link
                 href='/about'
                 className='self-start mt-10 block w-fit hover:bg-mainNavColor hover:border-mainNavColor transition duration-700 bg-inherit text-sm border px-7 py-1 my-5 uppercase text-mainTxtColor font-light tracking-wider'
@@ -64,7 +76,7 @@ function HomePage() {
       <div className='w-screen '>
         <OurApproach />
       </div>
-      <div className='w-screen mx-auto'>
+      <div className='w-screen  mx-auto'>
         <ProjectsPage />
       </div>
       <div className='w-full'>

@@ -13,7 +13,7 @@ function RenderCats({ selectCat }) {
   const baseUrl = `/our-projects`;
 
   return (
-    <div className='w-full max-w-6xl mx-auto lg:grid lg:grid-cols-4 h-full'>
+    <div className='w-full  max-w-6xl mx-auto lg:grid lg:grid-cols-4 h-fit'>
       {findById.map((item) => {
         return (
           <div

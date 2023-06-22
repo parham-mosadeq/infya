@@ -14,7 +14,7 @@ function ProjectsCats() {
   return (
     <article className='w-full h-full  flex flex-col items-center justify-center '>
       {/* select cats */}
-      <section className='flex items-center justify-between mt-10 flex-wrap w-3/4 max-w-6xl px-4'>
+      <section className='flex items-center justify-center lg:justify-between mt-10 flex-wrap w-3/4 max-w-6xl px-4'>
         <p
           onClick={() => setSelectCat('ALL PROJECTS')}
           className={`${
