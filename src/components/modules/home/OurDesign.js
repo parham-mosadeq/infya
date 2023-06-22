@@ -14,9 +14,9 @@ function OurDesign() {
         </h1>
         <article className=''>
           {/* projects */}
-          <div className='my-10 md:grid md:gap-3 md:grid-cols-2 w-full lg:grid-cols-2 xl:grid-cols-4 md:mx-2 md:w-full overflow-hidden transition duration-500 '>
+          <div className='my-10 md:grid md:items-center md:justify-center md:content-center md:gap-3 md:grid-cols-2 w-full lg:grid-cols-2 xl:grid-cols-4 md:mx-2 md:w-full overflow-hidden transition duration-500 '>
             {designs.map((item) => {
-              const lastIndex = item.desc.length / 3;
+              const lastIndex = item.desc.length / 4;
               const shortDesc = item.desc.slice(0, lastIndex);
               return (
                 <div
@@ -49,10 +49,10 @@ function OurDesign() {
                         className='block w-full  mx-auto text-center hover:blur-none transition duration-300 hover:bg-blur-sm text-mainNavColor
                     font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
                       >
-                        <h4 className='capitalize text-mainFooterColor  text-2xl font-bold w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[109px]'>
+                        <h4 className='capitalize text-mainFooterColor h-full block  text-2xl font-bold w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[109px]'>
                           {item.title}
                         </h4>
-                        <p className='h-full w-full mt-10 mx-auto lg:w-full md:text-sm lg:leading-tight leading-7 px-3 '>
+                        <p className='h-full block  w-full mt-10 mx-auto lg:w-full md:text-sm lg:leading-tight leading-7 px-3 '>
                           {shortDesc}...
                         </p>
                         <div className='w-1/2 mt-4 md:mt-7 mx-auto'>

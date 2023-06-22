@@ -3,66 +3,41 @@ import RenderCats from './RenderCats';
 import catDataDB from '../../../../data/catDataDB.json';
 
 function ProjectsCats() {
-  const [selectCat, setSelectCat] = useState('');
+  const [selectCat, setSelectCat] = useState('ALL PROJECTS');
+  const handleCat = (tags) => setSelectCat(tags);
 
-  const handleCat = (e) => setSelectCat(e.target.innerHTML);
+  const { prCats } = catDataDB;
+  const cats = prCats.map((item) => item.catName);
+  const cat = [...new Set(cats)];
+  const ids = prCats.map((item) => item.id);
 
   return (
     <article className='w-full h-full  flex flex-col items-center justify-center '>
       {/* select cats */}
       <section className='flex items-center justify-between mt-10 flex-wrap w-3/4 max-w-6xl px-4'>
         <p
-          onClick={(e) => handleCat(e)}
+          onClick={() => setSelectCat('ALL PROJECTS')}
           className={`${
-            selectCat === '' || (selectCat === 'all projects' && 'bg-backFilter')
-          } text-mainTxtColor px-3 py-1 my-2 transition duration-500 hover:bg-backFilter cursor-pointer uppercase`}
+            selectCat === 'ALL PROJECTS' && 'bg-backFilter'
+          } text-mainTxtColor px-3 py-1 hover:bg-backFilter cursor-pointer uppercase`}
         >
-          all projects
-        </p>
-        <p
-          onClick={(e) => handleCat(e)}
-          className={`${
-            selectCat === 'RETAIL' && 'bg-backFilter'
-          } text-mainTxtColor px-3 py-1 my-2 transition duration-500 hover:bg-backFilter cursor-pointer uppercase`}
-        >
-          RETAIL
-        </p>
-        <p
-          onClick={(e) => handleCat(e)}
-          className={`${
-            selectCat === 'CONSULTANCY' && 'bg-backFilter'
-          } text-mainTxtColor px-3 py-1 my-2 transition duration-500 hover:bg-backFilter cursor-pointer uppercase`}
-        >
-          CONSULTANCY
-        </p>
-        <p
-          onClick={(e) => handleCat(e)}
-          className={`${
-            selectCat === 'CORPORATE' && 'bg-backFilter'
-          } text-mainTxtColor px-3 py-1 my-2 transition duration-500 hover:bg-backFilter cursor-pointer uppercase`}
-        >
-          CORPORATE
-        </p>
-        <p
-          onClick={(e) => handleCat(e)}
-          className={`${
-            selectCat === 'HOSPITALITY' && 'bg-backFilter'
-          } text-mainTxtColor px-3 py-1 my-2 transition duration-500 hover:bg-backFilter cursor-pointer uppercase`}
-        >
-          HOSPITALITY
-        </p>
-        <p
-          onClick={(e) => handleCat(e)}
-          className={`${
-            selectCat === 'LANDSCAPING' && 'bg-backFilter'
-          } text-mainTxtColor px-3 py-1 my-2 transition duration-500 hover:bg-backFilter cursor-pointer uppercase`}
-        >
-          LANDSCAPING
+          ALL PROJECTS
         </p>
 
+        {cat.map((item, idx) => (
+          <p
+            onClick={() => handleCat({ id: ids[idx + 1], tag: item })}
+            className={`${
+              selectCat.id === ids[idx + 1] ? 'bg-backFilter' : ''
+            } hover:bg-backFilter px-3 py-1 transition duration-500 cursor-pointer text-mainTxtColor uppercase`}
+            key={item}
+          >
+            {item}
+          </p>
+        ))}
         {/* select cats */}
       </section>
-      {/* /////////////////////////////////////// */}
+
       {/* render cats */}
       <section className='mt-24 h-full w-full mx-auto'>
         <RenderCats
