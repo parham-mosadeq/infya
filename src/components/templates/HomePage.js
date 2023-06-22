@@ -3,6 +3,7 @@ import Image from 'next/image';
 import OurDesign from '../modules/home/OurDesign';
 import OurApproach from '../modules/home/OurApproach';
 import TalkWithUs from '../layouts/TalkWithUs';
+import ProjectsPage from './ProjectsPage';
 
 function HomePage() {
   return (
@@ -55,7 +56,6 @@ function HomePage() {
         {/* OUR DESIGN & BUILD SERVICES */}
 
         {/* OurApproach */}
-
         {/* OurApproach */}
 
         {/* view all projects */}
@@ -63,6 +63,9 @@ function HomePage() {
       </article>
       <div className='w-screen '>
         <OurApproach />
+      </div>
+      <div className='w-screen mx-auto'>
+        <ProjectsPage />
       </div>
       <div className='w-full'>
         <TalkWithUs href={'/our-projects'} title=' view all projects' />

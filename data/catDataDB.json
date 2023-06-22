@@ -1,0 +1,58 @@
+{
+  "prCats": [
+    {
+      "id": 1,
+      "images": "/images/category-images/image-4.jpg",
+      "imgTitle": "it can't be warmer",
+      "catName": "all project"
+    },
+    {
+      "id": 2,
+      "images": "/images/category-images/image-5.jpg",
+      "imgTitle": "shoe shopping with comfort",
+      "catName": "CONSULTANCY"
+    },
+    {
+      "id": 3,
+      "images": "/images/category-images/image-5.jpg",
+      "imgTitle": "shopping with comfort",
+      "catName": "CONSULTANCY"
+    },
+    {
+      "id": 4,
+      "images": "/images/category-images/image-6.jpg",
+      "imgTitle": "water & surroundings",
+      "catName": "CORPORATE"
+    },
+    {
+      "id": 5,
+      "images": "/images/category-images/image-6.jpg",
+      "imgTitle": "water & surroundings",
+      "catName": "CORPORATE"
+    },
+    {
+      "id": 6,
+      "images": "/images/category-images/image-7.jpg",
+      "imgTitle": "oriented rest area",
+      "catName": "HOSPITALITY"
+    },
+    {
+      "id": 7,
+      "images": "/images/category-images/image-7.jpg",
+      "imgTitle": "oriented rest area",
+      "catName": "HOSPITALITY"
+    },
+    {
+      "id": 8,
+      "images": "/images/category-images/image-8.jpg",
+      "imgTitle": "hello luxury",
+      "catName": "LANDSCAPING"
+    },
+    {
+      "id": 9,
+      "images": "/images/category-images/image-8.jpg",
+      "imgTitle": "hello luxury",
+      "catName": "LANDSCAPING"
+    }
+  ]
+}

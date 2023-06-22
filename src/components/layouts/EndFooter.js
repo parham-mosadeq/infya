@@ -4,7 +4,7 @@ function CopyRight() {
   return (
     <div className=' bg-mainNavColor h-36 w-full flex flex-col items-center justify-center'>
       <p className='mt-4 max-w-6xl text-center mx-auto'>
-        &copy; copyright {currentYear} - INFYA{' '}
+        &copy; copyright {currentYear} - MASTER ENGINEERING{' '}
       </p>
       <div className='flex items-center justify-center gap-6 mt-10 text-2xl'>
         <a href='/' target='_blank'>

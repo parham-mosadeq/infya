@@ -27,8 +27,10 @@ function OurDesign() {
                 >
                   <div className='w-full overflow-hidden lg:w-full mx-auto'>
                     <Image
-                      className={` 
-                       hover:scale-105 hover:blur-sm
+                      className={` ${
+                        onHover === item.id && 'scale-105 blur-md'
+                      }
+                       
                        w-full mx-auto h-72 md:h-56 md:w-full 
                        transition duration-500 `}
                       src={item.image}
@@ -45,6 +47,7 @@ function OurDesign() {
                     </h4>
                     {onHover === item.id && (
                       <div
+                        onMouseEnter={() => setOnHover(onHover)}
                         className='block w-full  mx-auto text-center hover:blur-none transition duration-300 hover:bg-blur-sm text-mainNavColor
                     font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
                       >

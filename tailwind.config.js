@@ -25,6 +25,9 @@ module.exports = {
         contactUsBg: 'url(../../public/yannick.jpg)',
         ourAppBg: 'url(../../public/ourApBG.jpg)',
       },
+      backgroundColor: {
+        backFilter: 'rgba(0,0,0,0.9)',
+      },
     },
   },
   plugins: [],
