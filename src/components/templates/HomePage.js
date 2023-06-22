@@ -14,7 +14,7 @@ function HomePage() {
         {/* video */}
 
         {/* about us */}
-        <div className='h-fit lg:h-[65vh] w-full grid grid-cols-1 lg:grid-cols-2 justify-center content-center items-center gap-4'>
+        <div className='h-fit  w-full grid grid-cols-1 lg:grid-cols-2  lg:content-center  gap-4'>
           <div className='w-full p-0 m-0 mx-auto h-1/2 lg:h-full lg:w-[100%] self-end lg:self-center'>
             <div className='block w-full h-full '>
               <Image
