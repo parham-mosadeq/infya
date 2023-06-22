@@ -6,9 +6,8 @@ function DesignDetails() {
   const { designs } = ourDesign;
   const itemId = +asPath[asPath.length - 1];
   const headTitle = asPath.split('/')[2].split('-').slice(0, -1).join(' ');
-  const TITLE = headTitle[headTitle.length - 1];
   const selectedDesign = designs.filter((item) => item.id === itemId);
-  console.log(headTitle);
+  console.log(selectedDesign);
   return (
     <section className='bg-mainAboutColor min-h-screen w-full'>
       <div className='h-48  bg-fixed flex items-center justify-center w-full bg-ourAppBg bg-no-repeat bg-center bg-cover'>
@@ -44,12 +43,12 @@ function DesignDetails() {
                   alt={item.title}
                 />
               </div>
+              <div>
+                <p>{item.fullDesc}</p>
+              </div>
             </div>
           );
         })}
-        <h1 className='my-7 text-left self-start text-3xl uppercase font-bold text-mainTxtColor tracking-wider'>
-          projects
-        </h1>
       </article>
     </section>
   );
