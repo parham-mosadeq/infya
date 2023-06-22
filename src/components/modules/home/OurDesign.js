@@ -27,9 +27,7 @@ function OurDesign() {
                 >
                   <div className='w-full overflow-hidden lg:w-full mx-auto'>
                     <Image
-                      className={` ${
-                        onHover === item.id && 'scale-105 blur-md'
-                      }
+                      className={` ${onHover === item.id && 'scale-105 blur-md'}
                        
                        w-full mx-auto h-72 md:h-56 md:w-full 
                        transition duration-500 `}
@@ -41,7 +39,7 @@ function OurDesign() {
                     <h4
                       className={`${
                         onHover === item.id && 'hidden'
-                      } block w-full font-bold px-1 text-center text-mainTxtColor  text-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2`}
+                      } block w-full font-bold px-1 text-center text-mainFooterColor  text-2xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2`}
                     >
                       {item.title}
                     </h4>
@@ -51,7 +49,7 @@ function OurDesign() {
                         className='block w-full  mx-auto text-center hover:blur-none transition duration-300 hover:bg-blur-sm text-mainNavColor
                     font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
                       >
-                        <h4 className='capitalize font-bold text-mainTxtColor text-lg w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[109px]'>
+                        <h4 className='capitalize text-mainFooterColor  text-2xl font-bold w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[109px]'>
                           {item.title}
                         </h4>
                         <p className='h-full w-full mt-10 mx-auto lg:w-full md:text-sm lg:leading-tight leading-7 px-3 '>

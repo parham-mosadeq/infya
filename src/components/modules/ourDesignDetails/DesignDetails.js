@@ -7,7 +7,6 @@ function DesignDetails() {
   const itemId = +asPath[asPath.length - 1];
   const headTitle = asPath.split('/')[2].split('-').slice(0, -1).join(' ');
   const selectedDesign = designs.filter((item) => item.id === itemId);
-  console.log(selectedDesign);
   return (
     <section className='bg-mainAboutColor min-h-screen w-full'>
       <div className='h-48  bg-fixed flex items-center justify-center w-full bg-ourAppBg bg-no-repeat bg-center bg-cover'>

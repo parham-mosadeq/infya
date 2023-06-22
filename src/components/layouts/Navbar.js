@@ -37,9 +37,7 @@ function Navbar() {
       >
         {/* logo */}
         <div>
-          <Link className='text-5xl z-10' href={'/'}>
-            LOGO
-          </Link>
+           
         </div>
         <span
           onClick={handleToggle}
