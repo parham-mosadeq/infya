@@ -19,6 +19,7 @@ module.exports = {
         mainFooterColor: '#101110',
         secFooterColor: '#0B0B0B',
         getInTouch: '#7E7F7E',
+        ourServicesSec: '#212324',
       },
       // for fixed bg we need to use this method
       backgroundImage: {
