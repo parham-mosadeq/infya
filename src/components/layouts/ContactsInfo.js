@@ -1,3 +1,4 @@
+import { FaWhatsapp } from 'react-icons/fa';
 function ContactsInfo() {
   return (
     <div className='block text-mainTxtColor'>
@@ -25,20 +26,38 @@ function ContactsInfo() {
           <h6 className='text-xl pt-4'>dubai</h6>
 
           <p>#107 Al Solemiyah tower diera dubai, united arab emirates</p>
-          {/* <p>
-            phone: <span>+971 552331984</span>{' '}
-          </p> */}
         </div>
         {/* dubai */}
       </div>
       <ul className='text-sm block'>
         <li className={`w-full  border-b mb-1 pb-2`}>
-          mobile:
-          <span className='pl-3'>+44 7729937777</span>
+          <div className='flex flex-col justify-center '>
+            <span className=''>mobile: +44 7729937777</span>
+            <span className=''>
+              <a
+                className='flex items-center'
+                href='https://wa.me/+447729937777'
+                target='_blank'
+              >
+                <FaWhatsapp className='text-xl' />: +44 7729937777
+              </a>
+            </span>
+          </div>
         </li>
         <li className={`w-full   border-b mb-1 pb-2`}>
-          phone:
-          <span className='pl-3'>+971 552331984</span>
+          <div className='flex flex-col justify-center '>
+            <span className='py-1'> phone: +971 552331984</span>
+            <span>
+              {' '}
+              <a
+                className='flex items-center'
+                href='https://wa.me/+971552331984'
+                target='_blank'
+              >
+                <FaWhatsapp className='text-xl  ' />: +971 552331984
+              </a>{' '}
+            </span>
+          </div>
         </li>
         <li className={`w-full  border-b  pb-2`}>
           email:
