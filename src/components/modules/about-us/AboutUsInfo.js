@@ -27,20 +27,6 @@ function AboutUsInfo() {
           with very high standards
         </p>{' '}
       </div>
-      <div className='py-4'>
-        <h1 className='text-4xl capitalize pb-2'>Our Vision</h1>
-        <p className='px-3'>
-          At Master Engineering we have the vision to bring architectural &
-          interior design, Home Automation, and mechanical & electrical
-          installation, together to create a modern, fully integrated
-          environment. With the advancement in smartphones and technology, has
-          allowed us to use this technology to create an environment where
-          Luxury designs merge with electrical equipment is controlled by a
-          single smart device. There is continued research and development to
-          create energy-efficient smart automation and we keep fully up to date
-          on the latest technology to offer our clients.
-        </p>
-      </div>
     </section>
   );
 }

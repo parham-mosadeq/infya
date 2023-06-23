@@ -14,7 +14,7 @@ function OurDesign() {
         </h1>
         <article className=''>
           {/* projects */}
-          <div className='my-10 md:grid md:items-center md:justify-center md:content-center md:gap-3 md:grid-cols-2 w-full lg:grid-cols-2 xl:grid-cols-4 md:mx-2 md:w-full overflow-hidden transition duration-500 '>
+          <div className='my-10 md:grid md:items-center md:justify-center md:content-center md:gap-3 md:grid-cols-2 w-full lg:grid-cols-2 xl:grid-cols-3 md:mx-2 md:w-full overflow-hidden transition duration-500 '>
             {designs.map((item) => {
               const lastIndex = item.desc.length / 4;
               const shortDesc = item.desc.slice(0, lastIndex);
