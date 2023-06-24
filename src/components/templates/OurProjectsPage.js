@@ -1,9 +1,9 @@
-import OurProjectsCol from "../modules/our-projects/OurProjectsCols";
+import OurProjectsCols from "../modules/our-projects/OurProjectsCols";
 
 function OurProjectsPage() {
   return (
     <section>
-      <OurProjectsCol />
+      <OurProjectsCols />
     </section>
   );
 }
