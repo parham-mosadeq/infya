@@ -19,7 +19,7 @@ function HomePage() {
             <div className='block w-full h-full '>
               <Image
                 className='block w-full h-full lg:h-3/4 object-cover'
-                src='/yannick.jpg'
+                src='/home-page.jpg'
                 width={500}
                 height={500}
                 alt='about us '

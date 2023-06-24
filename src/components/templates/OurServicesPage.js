@@ -45,7 +45,7 @@ function OurServicesPage() {
                       {desc}
                     </p>
                     <Link
-                      className='border flex items-center justify-between w-36 my-3 font-light uppercase  border-mainTxtColor px-4 py-1 bg-transparent hover:bg-mainTxtColor hover:text-mainAboutColor transition duration-300'
+                      className='border flex items-center justify-between w-fit my-3 font-light uppercase  border-mainTxtColor px-4 py-1 bg-transparent hover:bg-mainTxtColor hover:text-mainAboutColor transition duration-300'
                       href={`${baseUrl}/${href.split(' ').join('-')}-${id}`}
                     >
                       read more

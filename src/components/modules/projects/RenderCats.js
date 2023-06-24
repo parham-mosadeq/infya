@@ -2,24 +2,29 @@ import { useState } from 'react';
 import catDataDB from '../../../../data/catDataDB.json';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 function RenderCats({ selectCat }) {
   const { prCats } = catDataDB;
   const findById = prCats.filter((item) => item.catName === selectCat.tag);
-
+  const router = useRouter();
+  console.log();
   // const findById = prCats.filter((item) => item.catName === selectCat);
 
   const [hover, setOnHover] = useState(false);
 
   const baseUrl = `/our-projects`;
-
   return (
-    <div className='w-full  max-w-6xl mx-auto lg:grid lg:grid-cols-4 h-fit'>
+    <div
+      className={` ${
+        router.pathname === '/our-projects' ? 'gap-5' : ''
+      } w-full  max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-4 h-fit`}
+    >
       {findById.map((item) => {
         return (
           <div
             onMouseEnter={() => setOnHover(item.id)}
             onMouseLeave={() => setOnHover(false)}
-            className='w-full mx-auto relative overflow-hidden '
+            className={`w-full mx-auto relative overflow-hidden `}
             key={item.id}
           >
             <Link href={`${baseUrl}/${item.imgTitle}`}>

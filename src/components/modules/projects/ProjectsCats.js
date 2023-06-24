@@ -5,7 +5,6 @@ import catDataDB from '../../../../data/catDataDB.json';
 function ProjectsCats() {
   const [selectCat, setSelectCat] = useState('ALL PROJECTS');
   const handleCat = (tags) => setSelectCat(tags);
-
   const { prCats } = catDataDB;
   const cats = prCats.map((item) => item.catName);
   const cat = [...new Set(cats)];

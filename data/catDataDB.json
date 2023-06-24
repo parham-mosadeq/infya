@@ -2,57 +2,57 @@
   "prCats": [
     {
       "id": 1,
-      "images": "/images/category-images/image-4.jpg",
-      "imgTitle": "it can't be warmer",
-      "catName": "RETAIL"
+      "images": "/images/category-images/image-12.jpg",
+      "imgTitle": "interior design",
+      "catName": "interior design"
     },
     {
       "id": 2,
-      "images": "/images/category-images/image-5.jpg",
-      "imgTitle": "shoe shopping with comfort",
-      "catName": "CONSULTANCY"
+      "images": "/images/category-images/image-11.jpg",
+      "imgTitle": "home automation",
+      "catName": "home automation"
     },
     {
       "id": 3,
-      "images": "/images/category-images/image-5.jpg",
-      "imgTitle": "shopping with comfort",
-      "catName": "CONSULTANCY"
+      "images": "/images/category-images/image-10.jpg",
+      "imgTitle": "home automation",
+      "catName": "home automation"
     },
     {
       "id": 4,
-      "images": "/images/category-images/image-6.jpg",
-      "imgTitle": "water & surroundings",
-      "catName": "CORPORATE"
+      "images": "/images/category-images/image-13.jpg",
+      "imgTitle": "maintenance",
+      "catName": "maintenance"
     },
     {
       "id": 5,
-      "images": "/images/category-images/image-6.jpg",
-      "imgTitle": "water & surroundings",
-      "catName": "CORPORATE"
+      "images": "/images/category-images/image-10.jpg",
+      "imgTitle": "maintenance",
+      "catName": "maintenance"
     },
     {
       "id": 6,
-      "images": "/images/category-images/image-7.jpg",
-      "imgTitle": "oriented rest area",
-      "catName": "HOSPITALITY"
+      "images": "/images/category-images/image-11.jpg",
+      "imgTitle": "maintenance",
+      "catName": "maintenance"
     },
     {
       "id": 7,
-      "images": "/images/category-images/image-7.jpg",
-      "imgTitle": "oriented rest area",
-      "catName": "HOSPITALITY"
+      "images": "/images/category-images/image-11.jpg",
+      "imgTitle": "maintenance",
+      "catName": "home automation"
     },
     {
       "id": 8,
-      "images": "/images/category-images/image-8.jpg",
-      "imgTitle": "hello luxury",
-      "catName": "LANDSCAPING"
+      "images": "/images/category-images/image-13.jpg",
+      "imgTitle": "home automation",
+      "catName": "home automation"
     },
     {
       "id": 9,
-      "images": "/images/category-images/image-8.jpg",
-      "imgTitle": "hello luxury",
-      "catName": "LANDSCAPING"
+      "images": "/images/category-images/image-10.jpg",
+      "imgTitle": "home automation",
+      "catName": "maintenance"
     }
   ]
 }

@@ -1,9 +1,11 @@
+import OurProjectsPage from '@/components/templates/OurProjectsPage';
+
 function OurProjects() {
-  return <section>
-    <h1>
-      hello project home
-    </h1>
-  </section>;
+  return (
+    <main className='min-h-screen w-full bg-mainAboutColor'>
+      <OurProjectsPage />
+    </main>
+  );
 }
 
 export default OurProjects;
