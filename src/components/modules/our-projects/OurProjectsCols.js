@@ -1,6 +1,6 @@
 import ProjectsCats from '../projects/ProjectsCats';
 
-function OurProjectsCol() {
+function OurProjectsCols() {
   return (
     <section>
       <article>
@@ -10,4 +10,4 @@ function OurProjectsCol() {
   );
 }
 
-export default OurProjectsCol;
+export default OurProjectsCols;
