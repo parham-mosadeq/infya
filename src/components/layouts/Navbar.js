@@ -36,8 +36,13 @@ function Navbar() {
         } flex w-full flex-wrap md:max-w-7xl mx-auto items-center justify-between text-mainTxtColor `}
       >
         {/* logo */}
-        <div>
-           
+        <div className='w-fit'>
+          <Link
+            className='w-full text-xl font-extrabold tracking-wid '
+            href={'/'}
+          >
+            MASTER ENGINEERING
+          </Link>
         </div>
         <span
           onClick={handleToggle}
@@ -53,7 +58,7 @@ function Navbar() {
           lg:flex 
           lg:items-center
           lg:justify-center
-          lg:w-10/12
+          lg:w-9/12
           lg:mx-auto
           lg:translate-y-0 
           lg:relative 
