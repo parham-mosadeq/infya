@@ -38,7 +38,7 @@ function Navbar() {
         {/* logo */}
         <div className='w-fit'>
           <Link
-            className='w-full text-xl font-extrabold tracking-wid '
+            className='w-full text-lg lg:text-xl font-extrabold tracking-wid '
             href={'/'}
           >
             MASTER ENGINEERING
