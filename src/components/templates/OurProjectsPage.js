@@ -1,4 +1,4 @@
-import OurProjectsCol from "../modules/our-projects/OurProjectsCol";
+import OurProjectsCol from "../modules/our-projects/OurProjectsCols";
 
 function OurProjectsPage() {
   return (
