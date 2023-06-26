@@ -1,8 +1,10 @@
 import { useRouter } from 'next/router';
 import ourDesign from '../../../../data/ourDesDB.json';
 import Image from 'next/image';
+import Link from 'next/link';
 function DesignDetails() {
   const { asPath } = useRouter();
+  const breadCrumbs = asPath.split('/');
   const { designs } = ourDesign;
   const itemId = +asPath[asPath.length - 1];
   const headTitle = asPath.split('/')[2].split('-').slice(0, -1).join(' ');
@@ -17,8 +19,9 @@ function DesignDetails() {
         {/* title */}
         <div>
           <p className='text-sm hidden text-mainTxtColor capitalize lg:block px-2'>
-            <span>home</span>/<span>our services/</span>
-            <span>{headTitle}</span>
+            <Link href={'/'}>home</Link> /{' '}
+            <Link href={`/${breadCrumbs[1]}`}>our services </Link> /
+            <span> {headTitle}</span>
           </p>
         </div>
       </div>

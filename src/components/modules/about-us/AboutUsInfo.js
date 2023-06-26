@@ -1,9 +1,9 @@
 function AboutUsInfo() {
   return (
-    <section className='min-h-screen text-mainTxtColor flex flex-col justify-center py-10 px-4 text-lg'>
-      <div className='py-4'>
+    <section className='min-h-screen text-mainTxtColor flex flex-col justify-center py-10 px-1 lg:px-3 text-lg'>
+      <div className='py-4 '>
         <h1 className='text-4xl capitalize pb-2'>About US</h1>
-        <p className='px-3'>
+        <p className=' lg:px-2'>
           We provide professional Engineering services with, architectural &
           interior design, Home automation, and maintenance services exclusively
           to the luxury retail sector and affiliated business premises. With
