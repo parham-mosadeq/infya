@@ -4,55 +4,64 @@
       "id": 1,
       "images": "/images/category-images/image-12.jpg",
       "imgTitle": "interior design",
-      "catName": "interior design"
+      "catName": "interior design",
+      "fullDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis soluta porro provident molestiae quidem omnis, cupiditate beatae suscipit possimus maiores!"
     },
     {
       "id": 2,
       "images": "/images/category-images/image-11.jpg",
       "imgTitle": "home automation",
-      "catName": "home automation"
+      "catName": "home automation",
+      "fullDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis soluta porro provident molestiae quidem omnis, cupiditate beatae suscipit possimus maiores!"
     },
     {
       "id": 3,
       "images": "/images/category-images/image-10.jpg",
       "imgTitle": "home automation",
-      "catName": "home automation"
+      "catName": "home automation",
+      "fullDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis soluta porro provident molestiae quidem omnis, cupiditate beatae suscipit possimus maiores!"
     },
     {
       "id": 4,
       "images": "/images/category-images/image-13.jpg",
       "imgTitle": "maintenance",
-      "catName": "maintenance"
+      "catName": "maintenance",
+      "fullDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis soluta porro provident molestiae quidem omnis, cupiditate beatae suscipit possimus maiores! cupiditate beatae suscipit possimus maiores! cupiditate beatae suscipit possimus maiores! cupiditate beatae suscipit possimus maiores! cupiditate beatae suscipit possimus maiores!"
     },
     {
       "id": 5,
       "images": "/images/category-images/image-10.jpg",
       "imgTitle": "maintenance",
-      "catName": "maintenance"
+      "catName": "maintenance",
+      "fullDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis soluta porro provident molestiae quidem omnis, cupiditate beatae suscipit possimus maiores! maiores! cupiditate beatae suscipit possimus maiores! cupiditate beatae suscipit possimus maiores! cupiditate beatae suscipit possimus maiores! cupiditate beatae suscipit possimus maiores! "
     },
     {
       "id": 6,
       "images": "/images/category-images/image-11.jpg",
       "imgTitle": "maintenance",
-      "catName": "maintenance"
+      "catName": "maintenance",
+      "fullDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis soluta porro provident molestiae quidem omnis, cupiditate beatae suscipit possimus maiores! maiores! cupiditate beatae suscipit possimus maiores! cupiditate beatae suscipit possimus maiores! cupiditate beatae suscipit possimus maiores! cupiditate beatae suscipit possimus maiores! "
     },
     {
       "id": 7,
       "images": "/images/category-images/image-11.jpg",
       "imgTitle": "maintenance",
-      "catName": "home automation"
+      "catName": "home automation",
+      "fullDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis soluta porro provident molestiae quidem omnis, cupiditate beatae suscipit possimus maiores! maiores! cupiditate beatae suscipit possimus maiores! cupiditate beatae suscipit possimus maiores! cupiditate beatae suscipit possimus maiores! cupiditate beatae suscipit possimus maiores! "
     },
     {
       "id": 8,
       "images": "/images/category-images/image-13.jpg",
       "imgTitle": "home automation",
-      "catName": "home automation"
+      "catName": "home automation",
+      "fullDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis soluta porro provident molestiae quidem omnis, cupiditate beatae suscipit possimus maiores! maiores! cupiditate beatae suscipit possimus maiores! cupiditate beatae suscipit possimus maiores! cupiditate beatae suscipit possimus maiores! cupiditate beatae suscipit possimus maiores! "
     },
     {
       "id": 9,
       "images": "/images/category-images/image-10.jpg",
       "imgTitle": "home automation",
-      "catName": "maintenance"
+      "catName": "maintenance",
+      "fullDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis soluta porro provident molestiae quidem omnis, cupiditate beatae suscipit possimus maiores! maiores! cupiditate beatae suscipit possimus maiores! cupiditate beatae suscipit possimus maiores! cupiditate beatae suscipit possimus maiores! cupiditate beatae suscipit possimus maiores! "
     }
   ]
 }

@@ -30,7 +30,7 @@ function RenderCats({ selectCat }) {
             className={`w-full mx-auto relative overflow-hidden `}
             key={item.id}
           >
-            <Link href={`${baseUrl}/${item.imgTitle}`}>
+            <Link href={`${baseUrl}/${item.imgTitle}-${item.id}`}>
               <Image
                 className={`  mx-auto w-full h-[220px] object-cover transition duration-300 hover:scale-110`}
                 src={item.images}

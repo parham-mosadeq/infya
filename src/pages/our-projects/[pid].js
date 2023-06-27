@@ -1,8 +1,10 @@
+import OurProjectDetailsPage from '@/components/templates/OurProjectDetailsPage';
+
 function ProjectDetail() {
   return (
-    <div>
-      <h1>id</h1>
-    </div>
+    <main className='min-h-screen'>
+      <OurProjectDetailsPage />
+    </main>
   );
 }
 
