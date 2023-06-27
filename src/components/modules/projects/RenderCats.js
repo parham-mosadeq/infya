@@ -4,8 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 function RenderCats({ selectCat }) {
+  console.log(selectCat);
   const { prCats } = catDataDB;
-  const findById = prCats.filter((item) => item.catName === selectCat.tag);
+  const findById = prCats.filter((item) =>
+    selectCat === '' ? item : item.catName === selectCat.tag
+  );
   const router = useRouter();
   console.log();
   // const findById = prCats.filter((item) => item.catName === selectCat);
@@ -29,7 +32,7 @@ function RenderCats({ selectCat }) {
           >
             <Link href={`${baseUrl}/${item.imgTitle}`}>
               <Image
-                className='mx-auto w-full h-[220px] object-cover transition-all duration-500 hover:scale-110'
+                className={`  mx-auto w-full h-[220px] object-cover transition duration-300 hover:scale-110`}
                 src={item.images}
                 width={540}
                 height={540}
@@ -37,7 +40,7 @@ function RenderCats({ selectCat }) {
               />
               <p
                 className={`${
-                  hover === item.id ? 'absolute' : 'opacity-0'
+                  hover === item.id ? 'absolute scale-110' : 'opacity-0 scale-0'
                 } text-mainTxtColor px-4 transition-color duration-500 font-bold 
               uppercase tracking-wider hover:bg-backFilter text-center flex justify-center
               items-center w-full h-full mx-auto absolute top-1/2 left-1/2 -translate-x-1/2 

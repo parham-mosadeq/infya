@@ -39,9 +39,7 @@ function ProjectsCats() {
 
       {/* render cats */}
       <section className='mt-24 h-full w-full mx-auto'>
-        <RenderCats
-          selectCat={selectCat === 'all projects' ? ' ' : selectCat}
-        />
+        <RenderCats selectCat={selectCat === 'ALL PROJECTS' ? '' : selectCat} />
       </section>
       {/* render cats */}
     </article>
