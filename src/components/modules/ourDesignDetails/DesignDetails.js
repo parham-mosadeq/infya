@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import ourDesign from '../../../../data/ourDesDB.json';
 import Image from 'next/image';
 import Link from 'next/link';
+import FullDesc from './FullDesc';
 function DesignDetails() {
   const { asPath } = useRouter();
   const breadCrumbs = asPath.split('/');
@@ -26,28 +27,37 @@ function DesignDetails() {
         </div>
       </div>
 
-      <article className='max-w-6xl mx-auto flex items-center justify-center flex-col px-4 py-10'>
+      <article className='max-w-7xl mx-auto flex items-center justify-center flex-col px-4 py-10'>
         {selectedDesign.map((item) => {
+          const midFullDesc = Math.floor(item.fullDesc.length / 2);
+          const firstHalfDesc = item.fullDesc.slice(0, midFullDesc);
+          const lastHalfDesc = item.fullDesc.slice(midFullDesc);
+
           return (
             <div
               key={item.id}
-              className='  h-full w-full  grid gap-5 lg:grid-cols-2 text-mainTxtColor'
+              className='  h-full w-full  flex flex-col lg:flex-row text-mainTxtColor'
             >
-              <div className=' my-10 text-sm lg:text-lg leading-7 font-light'>
-                <p>{item.desc}</p>
-              </div>
-              <div className='w-full h-full'>
-                <Image
-                  className='w-full object-cover my-10 '
-                  src={item.image}
-                  width={320}
-                  height={320}
-                  alt={item.title}
-                />
-              </div>
-              <div>
-                <p>{item.fullDesc}</p>
-              </div>
+              <section className=' my-10 text-sm lg:text-lg leading-7 font-light'>
+                <article>
+                  <div className='w-full h-full lg:flex lg:items-center lg:justify-center'>
+                    <p>{item.desc}</p>
+                    <Image
+                      className='w-3/4 mx-auto object-cover my-10 '
+                      src={item.image}
+                      width={420}
+                      height={420}
+                      alt={item.title}
+                    />
+                  </div>
+                  <div className='col-span-2'>
+                    <div>
+                      {/* first */}
+                      <FullDesc topic={item.txtKey} />
+                    </div>
+                  </div>
+                </article>
+              </section>
             </div>
           );
         })}

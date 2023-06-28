@@ -49,7 +49,7 @@ function HomePage() {
             </div>
           </article>
           {/* our vision */}
-          <article className='w-full h-full lg:flex lg:flex-row-reverse mt-10'>
+          <article className='w-full h-full lg:flex lg:flex-row-reverse lg:-mb-36 mt-10'>
             <div className='w-full p-0 m-0 mx-auto h-1/2 lg:h-full lg:w-[100%] self-end lg:self-center'>
               <div className='block w-full h-1/2 lg:h-full'>
                 <Image

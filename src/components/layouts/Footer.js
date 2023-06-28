@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className='w-full m-0  mx-auto bg-mainFooterColor capitalize text-mainTxtColor  flex flex-col items-center justify-center'>
       <div className='max-w-6xl w-full flex flex-col gap-5 px-4 my-10 lg:grid lg:grid-cols-3'>
-        <div>
+        {/* <div>
           <Link href='/' className='text-4xl'>
             MASTER ENGINEERING
           </Link>
@@ -17,7 +17,7 @@ function Footer() {
             Residential, Commercial, luxury retail sector and affiliated
             business premises.
           </p>
-        </div>
+        </div> */}
         {/* logo */}
         {/* quick links */}
         <div>
@@ -37,7 +37,9 @@ function Footer() {
         </div>
         {/* quick links */}
         {/* contact us */}
-        <ContactsInfo />
+        <div className='col-start-3 col-end-3'>
+          <ContactsInfo />
+        </div>
         {/* contact us */}
       </div>
       <CopyRight />

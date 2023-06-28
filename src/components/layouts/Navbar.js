@@ -10,7 +10,6 @@ export const navItems = [
   { name: 'our services', href: '/our-services' },
   { name: 'our projects', href: '/our-projects' },
   { name: 'contact us', href: '/contact-us' },
-  { name: 'get in touch', href: '/get-in-touch' },
 ];
 
 function Navbar() {
