@@ -389,6 +389,122 @@ function FullDesc({ topic }) {
       </section>
     );
   }
+
+  if (topic === 'AutomationServices') {
+    return (
+      <section className='w-full h-full'>
+        <article className='flex flex-col justify-center items-center w-full h-full'>
+          <div className='flex  w-full h-full items-center justify-center flex-col lg:flex-row-reverse'>
+            <div className='w-full m-5'>
+              <h3 className='text-2xl uppercase'>
+                Smart Home Automation Services{' '}
+              </h3>
+              <p>
+                What is a Smart Home Automation? Imagine walking into your home
+                with lights and music automatically setting the mood in each
+                room, just as you need, after a long hard day. Imagine the
+                heating being perfectly set to the weather outside before you
+                even think about it, the blinds come down and the security
+                clicks on once your family is safe inside. Moreover, the kettle
+                is on. Perfection. Masteengineering can do all this for you, and
+                much more, freeing you from the monotony of thousands of
+                everyday tasks.
+              </p>
+            </div>
+            <div className='w-full h-full'>
+              <Image
+                className='w-full max-h-96 mx-auto object-cover my-10 '
+                src='/images/ourDesign/Energy.png'
+                width={420}
+                height={420}
+                alt={'COMMUNITY DESIGN PRESENTATION AND BUILD'}
+              />
+            </div>
+          </div>
+          <div className='flex  w-full h-full items-center justify-center flex-col lg:flex-row'>
+            <div className='w-full m-5'>
+              <h3 className='text-2xl uppercase'></h3>
+              <p>
+                What’s more is that it’s so easy to use, with no complicated
+                control panels, and no impossible programming. It really is an
+                Intelligent System that knows what to do and when. Our Smart
+                Home is a uniquely robust and reliable Smart system that gives
+                you endless possibilities for your home automation design. It
+                takes care of thousands of tasks to make your life more
+                enjoyable, making you smile every time you enter your home.
+              </p>
+              <ul className='font-bold tracking-wider list-disc pl-5 py-6'>
+                <li>Cooling </li>
+                <li>Heating </li>
+                <li>Lighting </li>
+                <li>Ventilation</li>
+                <li>Security</li>
+                <li>Access</li>
+              </ul>
+            </div>
+            <div className='w-full h-full'>
+              <Image
+                className='w-full max-h-96 mx-auto object-cover my-10 '
+                src='/images/ourDesign/lists.png'
+                width={420}
+                height={420}
+                alt={'COMMUNITY DESIGN PRESENTATION AND BUILD'}
+              />
+            </div>
+          </div>
+
+          <div className='flex flex-col lg:flex-row-reverse items-center justify-center w-full h-full'>
+            <div className='w-full m-5'>
+              <h3 className='text-2xl uppercase'></h3>
+              <p>
+                An ‘Intelligent’ way of Living An ‘Intelligent’ home; a home
+                that knows what you want, and when you want it, whether you are
+                there or not. It automatically does the tasks you need without
+                asking. It has thousands of options to choose from; like the
+                music you enjoy, lighting moods you’ve created, and the perfect
+                room temperatures. Of course, if you want to, you can take
+                charge at any time and reconfigure your room in an instant, with
+                a dedicated our Smart Home App.
+              </p>
+            </div>
+            <div className='h-full w-full'>
+              <Image
+                className='w-full mx-auto object-cover my-10 '
+                src='/images/ourDesign/intle.png'
+                width={420}
+                height={420}
+                alt={'COMMERCIAL DESIGN PRESENTATION AND BUILD'}
+              />
+            </div>
+          </div>
+
+          <div className='flex flex-col items-center justify-center w-full h-full lg:flex-row'>
+            <div className='w-full m-5'>
+              <h3 className='text-2xl uppercase'>Configurations</h3>
+              <p>
+                An ‘Intelligent’ home; a home that knows what you want, and when
+                you want it, whether you are there or not. It automatically does
+                the tasks you need without asking. It has thousands of options
+                to choose from; like the music you enjoy, lighting moods you’ve
+                created, and the perfect room temperatures. Of course, if you
+                want to, you can take charge at any time and reconfigure your
+                room in an instant, with a dedicated our Smart Home App.
+              </p>
+            </div>
+            <div className='h-full w-full'>
+              <Image
+                className='w-full  mx-auto object-cover my-10 '
+                src='/images/ourDesign/config.png'
+                width={420}
+                height={420}
+                alt={' CUSTOM-MADE FURNITURE DESIGN'}
+              />
+            </div>
+          </div>
+        </article>
+      </section>
+    );
+  }
 }
 
 export default FullDesc;
