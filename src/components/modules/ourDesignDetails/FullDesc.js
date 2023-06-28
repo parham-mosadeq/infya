@@ -107,8 +107,8 @@ function FullDesc({ topic }) {
             </div>
             <div className='w-full h-full'>
               <Image
-                className='w-full mx-auto object-cover my-10 '
-                src='/images/ourDesign/image-1.jpg'
+                className='w-full max-h-96  mx-auto object-cover my-10 '
+                src='/images/ourDesign/Maintenance.png'
                 width={420}
                 height={420}
                 alt={'COMMUNITY DESIGN PRESENTATION AND BUILD'}
@@ -147,8 +147,8 @@ function FullDesc({ topic }) {
             </div>
             <div className='h-full w-full'>
               <Image
-                className='w-full mx-auto object-cover my-10 '
-                src='/images/ourDesign/image-1.jpg'
+                className='w-full max-h-96 mx-auto object-cover my-10 '
+                src='/images/ourDesign/FCU-Service.png'
                 width={420}
                 height={420}
                 alt={'COMMERCIAL DESIGN PRESENTATION AND BUILD'}
@@ -175,8 +175,8 @@ function FullDesc({ topic }) {
             </div>
             <div className='h-full w-full'>
               <Image
-                className='w-full  mx-auto object-cover my-10 '
-                src='/images/ourDesign/image-1.jpg'
+                className='w-full max-h-96 mx-auto object-cover my-10 '
+                src='/images/ourDesign/HIU-Service.jpg'
                 width={420}
                 height={420}
                 alt={' CUSTOM-MADE FURNITURE DESIGN'}
@@ -218,8 +218,8 @@ function FullDesc({ topic }) {
             </div>
             <div className='h-full w-full'>
               <Image
-                className='w-full  mx-auto object-cover my-10 '
-                src='/images/ourDesign/image-1.jpg'
+                className='w-full max-h-96  mx-auto object-cover my-10 '
+                src='/images/ourDesign/HIUM.png'
                 width={420}
                 height={420}
                 alt={' CUSTOM-MADE FURNITURE DESIGN'}
@@ -261,8 +261,8 @@ function FullDesc({ topic }) {
             </div>
             <div className='h-full w-full'>
               <Image
-                className='w-full  mx-auto object-cover my-10 '
-                src='/images/ourDesign/image-1.jpg'
+                className='w-full max-h-96 mx-auto object-cover my-10 '
+                src='/images/ourDesign/FCUM.jpg'
                 width={420}
                 height={420}
                 alt={' CUSTOM-MADE FURNITURE DESIGN'}
@@ -276,7 +276,6 @@ function FullDesc({ topic }) {
                 Our Service Plan Provides the Following:
               </h3>
               <p>
-                <span></span>
                 <span>
                   The Comprehensive Service Plan remains valid providing that
                   the following conditions are met and maintained: 1. Water
@@ -306,8 +305,8 @@ function FullDesc({ topic }) {
             </div>
             <div className='h-full w-full'>
               <Image
-                className='w-full  mx-auto object-cover my-10 '
-                src='/images/ourDesign/image-1.jpg'
+                className='w-full max-h-96 mx-auto object-cover my-10 '
+                src='/images/ourDesign/Maintenance.png'
                 width={420}
                 height={420}
                 alt={' CUSTOM-MADE FURNITURE DESIGN'}
@@ -343,8 +342,8 @@ function FullDesc({ topic }) {
             </div>
             <div className='h-full w-full'>
               <Image
-                className='w-full mx-auto object-cover my-10 '
-                src='/images/ourDesign/image-1.jpg'
+                className='w-full max-h-96 mx-auto object-cover my-10 '
+                src='/images/ourDesign/MVHR-Service.png'
                 width={420}
                 height={420}
                 alt={'COMMERCIAL DESIGN PRESENTATION AND BUILD'}
@@ -378,8 +377,8 @@ function FullDesc({ topic }) {
             </div>
             <div className='h-full w-full'>
               <Image
-                className='w-full mx-auto object-cover my-10 '
-                src='/images/ourDesign/image-1.jpg'
+                className='w-full max-h-96 mx-auto object-cover my-10 '
+                src='/images/ourDesign/Electrical.png'
                 width={420}
                 height={420}
                 alt={'COMMERCIAL DESIGN PRESENTATION AND BUILD'}
