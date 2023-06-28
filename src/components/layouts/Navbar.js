@@ -32,12 +32,12 @@ function Navbar() {
       <div
         className={` transition-[height] duration-300 ${
           isOpen ? 'h-full' : 'h-fit'
-        } flex w-full flex-wrap md:max-w-7xl mx-auto items-center justify-between text-mainTxtColor `}
+        } flex w-full flex-wrap md:max-w-[1900px] mx-auto items-center justify-between text-mainTxtColor `}
       >
         {/* logo */}
         <div className='w-fit'>
           <Link
-            className='w-full text-lg lg:text-xl font-extrabold tracking-wid '
+            className='w-full text-lg lg:text-2xl font-extrabold tracking-widest '
             href={'/'}
           >
             MASTER ENGINEERING
