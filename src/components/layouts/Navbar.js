@@ -32,7 +32,7 @@ function Navbar() {
       <div
         className={` transition-[height] duration-300 ${
           isOpen ? 'h-full' : 'h-fit'
-        } flex w-full flex-wrap md:max-w-[1900px] mx-auto items-center justify-between text-mainTxtColor `}
+        } flex w-full flex-wrap md:max-w-[1470px] mx-auto items-center justify-between text-mainTxtColor `}
       >
         {/* logo */}
         <div className='w-fit'>
