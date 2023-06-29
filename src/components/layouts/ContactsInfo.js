@@ -1,21 +1,25 @@
 import { FaWhatsapp } from 'react-icons/fa';
-function ContactsInfo() {
+function ContactsInfo({ isFooter = false }) {
   return (
     <div className='block w-full text-mainTxtColor'>
-      <h3 className='text-3xl w-1/2'>contact us</h3>
+      <h3 className='text-3xl capitalize w-fit'>contact us</h3>
       <div>
-        <h3 className='text-2xl capitalize'>master engineering</h3>
+        <h3 className='text-2xl  w-fit capitalize'>master engineering</h3>
       </div>
-      <section className=''>
+      <section
+        className={`${
+          isFooter && 'lg:flex lg:justify-between lg:items-center'
+        } capitalize`}
+      >
         <div>
           {/* london */}
           <div className=''>
-            <h6 className='text-xl pt-4'>london</h6>
-            <p>
+            <h6 className='text-xl  pt-4'>london</h6>
+            <p className='lg:w-3/4'>
               first floor office, 3 hornton place, london, united kingdom, W84LZ
             </p>
             <ul>
-              <li className={`w-full  border-b mb-1 pb-2`}>
+              <li className={`lg:w-3/4  border-b mb-1 pb-2`}>
                 <div className='flex flex-col justify-center '>
                   <span className=''>mobile: +44 7729937777</span>
                   <span className=''>
@@ -29,7 +33,7 @@ function ContactsInfo() {
                   </span>
                 </div>
               </li>
-              <li className={`w-full  border-b  pb-2`}>
+              <li className={`lg:w-3/4  border-b  pb-2`}>
                 email:
                 <a className='pl-3' href='mailto:info@masterengineering.com'>
                   info@masterengineering.com
@@ -41,15 +45,17 @@ function ContactsInfo() {
         </div>
 
         {/* dubai */}
-        <div>
+        <div className=''>
           <div>
             <h6 className='text-xl pt-4'>dubai</h6>
 
-            <p>#107 Al Solemiyah tower diera dubai, united arab emirates</p>
+            <p className='lg:w-3/4'>
+              #107 Al Solemiyah tower diera dubai, united arab emirates
+            </p>
           </div>
           {/* dubai */}
           <ul className='text-sm block'>
-            <li className={`w-full   border-b mb-1 pb-2`}>
+            <li className={`lg:w-3/4   border-b mb-1 pb-2`}>
               <div className='flex flex-col justify-center '>
                 <span className='py-1'> phone: +971 552331984</span>
                 <span>
@@ -64,7 +70,7 @@ function ContactsInfo() {
                 </span>
               </div>
             </li>
-            <li className={`w-full  border-b  pb-2`}>
+            <li className={`lg:w-3/4  border-b  pb-2`}>
               email:
               <a className='pl-3' href='mailto:info@masterengineering.com'>
                 info@masterengineering.com

@@ -3,7 +3,7 @@ import ContactUsForm from '../modules/contact-us/ContactUsForm';
 import ContactUsProfile from '../modules/contact-us/ContactUsProfile';
 function ContactUsPage() {
   return (
-    <div className='relative min-h-screen z-20 mx-auto w-full bg-mainAboutColor'>
+    <div className='relative min-h-screen  mx-auto w-full bg-mainAboutColor'>
       {/* bg  */}
       <ContactUsProfile title='Contact us' />
       {/* bg  */}

@@ -5,7 +5,7 @@ import Link from 'next/link';
 function Footer() {
   return (
     <footer className='w-full m-0  mx-auto bg-mainFooterColor capitalize text-mainTxtColor  flex flex-col items-center justify-center'>
-      <div className='max-w-6xl w-full flex flex-col gap-5 px-4 my-10 lg:grid lg:grid-cols-3'>
+      <div className='max-w-6xl w-full flex flex-col gap-5 px-4 my-10 lg:grid lg:grid-cols-[20%_w-full]'>
         {/* <div>
           <Link href='/' className='text-4xl'>
             MASTER ENGINEERING
@@ -20,7 +20,7 @@ function Footer() {
         </div> */}
         {/* logo */}
         {/* quick links */}
-        <div>
+        <div className='w-full'>
           <h3 className='text-2xl'>QUICK LINKS</h3>
           <ul className='w-full'>
             {navItems.map((item) => (
@@ -37,8 +37,8 @@ function Footer() {
         </div>
         {/* quick links */}
         {/* contact us */}
-        <div className='col-start-3 col-end-3'>
-          <ContactsInfo />
+        <div className='col-start-2 col-end-3'>
+          <ContactsInfo isFooter={true} />
         </div>
         {/* contact us */}
       </div>
