@@ -25,7 +25,6 @@ module.exports = {
       backgroundImage: {
         contactUsBg: 'url(../../public/home-page.jpg)',
         ourAppBg: 'url(../../public/ourApBG.jpg)',
-        ourSecAppBg: 'url(../../public/SecApproachBG.jpg)',
       },
       backgroundColor: {
         backFilter: 'rgba(0,0,0,0.9)',

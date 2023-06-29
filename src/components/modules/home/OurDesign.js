@@ -10,7 +10,7 @@ function OurDesign() {
     <>
       <div className='w-full pb-20 mt-16 lg:mt-24 grid'>
         <h1 className='text-center border-b pb-4 text-3xl text-mainTxtColor tracking-wider '>
-          Our Services - All the services you need, in one place
+          Our Services <br /> All the services you need, in one place
         </h1>
         <article className=''>
           {/* projects */}

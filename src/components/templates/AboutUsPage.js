@@ -8,13 +8,13 @@ function AboutUsPage() {
   return (
     <main className='h-full bg-mainAboutColor w-full overflow-hidden'>
       <ContactUsProfile title='about us' />
-      <div className=' py-16  mx-auto flex items-center justify-center flex-col lg:flex-row'>
+      <div className=' py-16 max-w-6xl  mx-auto flex items-center justify-center flex-col lg:flex-row'>
         {/* to turn to previous width sizes place max-w-6xl down here */}
-        <div className='w-full  mx-auto h-96 lg:h-1/2 xl:h-3/4 xl:w-3/4'>
+        <div className='w-full  h-96 lg:h-1/2 xl:h-3/4 '>
           <AboutUsProfile />
         </div>
         {/* to turn to previous width delete max-w-6xl down here */}
-        <div className=' w-3/4 max-w-6xl mx-auto'>
+        <div className=' w-full '>
           <AboutUsInfo />
         </div>
       </div>
