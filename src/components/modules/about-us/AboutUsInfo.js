@@ -3,7 +3,7 @@ function AboutUsInfo() {
     <section className='h-fit text-mainTxtColor flex flex-col justify-center py-10 lg:px-3 text-lg'>
       <div className='p-4   '>
         <h1 className='text-4xl capitalize pb-2'>About US</h1>
-        <p className='lg:text-sm lg:leading-6 capitalize lg:px-1'>
+        <p className='lg:text-sm lg:leading-6 capitalize lg:px-1 text-justify'>
           We provide professional Engineering services with, architectural &
           interior design, Home automation, and maintenance services exclusively
           to the luxury retail sector and affiliated business premises. With
