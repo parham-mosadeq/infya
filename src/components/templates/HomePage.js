@@ -32,7 +32,7 @@ function HomePage() {
             <div className='pb-10 px-4 lg:pb-0 lg:h-full lg:w-3/4'>
               <div className='text-mainTxtColor py-10 px-4 text-lg '>
                 <h1 className='text-4xl capitalize mb-3 lg:h-full'>about us</h1>
-                <p className='lg:h-full'>
+                <p className='lg:h-full text-justify'>
                   We provide professional Engineering services with,
                   architectural & interior design, Home automation, and
                   maintenance services exclusively to the luxury retail sector
@@ -63,7 +63,7 @@ function HomePage() {
             </div>
             <div className='p-4 text-mainTxtColor lg:w-3/4'>
               <h1 className='text-4xl capitalize pb-2'>Our Vision</h1>
-              <p className=' lg:h-full lg:w-full'>
+              <p className=' lg:h-full lg:w-full text-justify'>
                 At Master Engineering we have the vision to bring architectural
                 & interior design, Home Automation, and mechanical & electrical
                 installation, together to create a modern, fully integrated
