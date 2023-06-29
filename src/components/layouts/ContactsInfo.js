@@ -57,15 +57,15 @@ function ContactsInfo({ isFooter = false }) {
           <ul className='text-sm block'>
             <li className={`lg:w-3/4   border-b mb-1 pb-2`}>
               <div className='flex flex-col justify-center '>
-                <span className='py-1'> phone: +971 552331984</span>
+                <span className='py-1'> phone: +971 56 565 1751</span>
                 <span>
                   {' '}
                   <a
                     className='flex items-center'
-                    href='https://wa.me/+971552331984'
+                    href='https://wa.me/+971565651751'
                     target='_blank'
                   >
-                    <FaWhatsapp className='text-xl  ' />: +971 552331984
+                    <FaWhatsapp className='text-xl  ' />: +971 56 565 1751
                   </a>{' '}
                 </span>
               </div>
