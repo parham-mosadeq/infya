@@ -3,8 +3,9 @@ import ourDesign from '../../../../data/ourDesDB.json';
 import Image from 'next/image';
 import Link from 'next/link';
 import FullDesc from './FullDesc';
+import Head from 'next/head';
 function DesignDetails() {
-  const { asPath } = useRouter();
+  const { asPath,pathname } = useRouter();
   const breadCrumbs = asPath.split('/');
   const { designs } = ourDesign;
   const itemId = +asPath[asPath.length - 1];
@@ -12,6 +13,47 @@ function DesignDetails() {
   const selectedDesign = designs.filter((item) => item.id === itemId);
   return (
     <section className='bg-mainAboutColor min-h-screen w-full'>
+      <Head>
+        <title>MASTER ENGINEERING | {headTitle.toLocaleUpperCase()}</title>
+        <meta name='description' content={headTitle} />
+
+        <meta
+          property='og:title'
+          key='master engineering home page'
+          content={`MASTER ENGINEERING | ${headTitle}`}
+        />
+        <meta
+          property='og:type'
+          key={`Our Services - ${headTitle}`}
+          content='article'
+        />
+
+        <meta
+          property='og:description'
+          key={`a full description regarding ${headTitle}`}
+          content={`everything you need to know about ${headTitle}`}
+        />
+
+        <meta
+          property='og:image'
+          key='Our Services picture'
+          content='/images/category-images/image-10'
+        />
+
+        <meta
+          property='og:url'
+          key='link ,website, where_to_go'
+          content={pathname}
+        />
+
+        <meta
+          property='og:site_name'
+          key='site, name,master_engineering_site_name'
+          content='Masterengineering.Co.uk'
+        />
+        <meta name='google' content='notranslate' key='notranslate' />
+        <meta name='robots' content='all' />
+      </Head>
       <div className='h-48  bg-fixed flex items-center justify-center w-full bg-ourAppBg bg-no-repeat bg-center bg-cover'>
         {/* title */}
         <div className='px-2 w-full text-mainTxtColor max-w-6xl '>
