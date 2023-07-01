@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 function ContactUsProfile({ title }) {
   return (
     <>
@@ -12,7 +14,7 @@ function ContactUsProfile({ title }) {
                 {title}
               </p>
               <p className='capitalize text- font-bold tracking-wider text-mainTxtColor  '>
-                home / contact us
+                <Link href={'/'}>home</Link> / {title}
               </p>
             </div>
           </div>
