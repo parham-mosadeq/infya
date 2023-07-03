@@ -21,8 +21,8 @@ function Footer() {
         </div> */}
         {/* logo */}
         {/* quick links */}
-        <div className='w-fit '>
-          <h3 className='text-2xl tracking-widest'>QUICK LINKS</h3>
+        <div className='w-fit mt-3'>
+          <h3 className='text-xl tracking-widest'>QUICK LINKS</h3>
           <ul className='w-full'>
             {navItems.map((item) => (
               <li
