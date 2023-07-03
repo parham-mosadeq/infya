@@ -20,15 +20,15 @@ function Footer() {
         </div> */}
         {/* logo */}
         {/* quick links */}
-        <div className='w-full'>
-          <h3 className='text-2xl'>QUICK LINKS</h3>
+        <div className='w-full '>
+          <h3 className='text-2xl tracking-widest'>QUICK LINKS</h3>
           <ul className='w-full'>
             {navItems.map((item) => (
               <li
                 className='border-b border-gray-900 w-full my-3'
                 key={item.name}
               >
-                <Link className='w-full block' href={item.href}>
+                <Link className='w-full font-bold tracking-wider block' href={item.href}>
                   {item.name}
                 </Link>
               </li>

@@ -2,20 +2,20 @@ import { FaWhatsapp } from 'react-icons/fa';
 function ContactsInfo({ isFooter = false }) {
   return (
     <div className='block w-full text-mainTxtColor'>
-      <h3 className='text-3xl capitalize w-fit'>contact us</h3>
+      <h3 className='text-5xl capitalize w-fit lg:text-center'>contact us</h3>
       <div>
-        <h3 className='text-2xl  w-fit capitalize'>master engineering</h3>
+        {/* <h3 className='text-2xl  w-fit capitalize'>master engineering</h3> */}
       </div>
       <section
         className={`${
           isFooter && 'lg:flex lg:justify-between lg:items-center'
         } capitalize`}
       >
-        <div>
+        <div className=''>
           {/* london */}
           <div className=''>
-            <h6 className='text-xl  pt-4'>london</h6>
-            <p className='lg:w-3/4'>
+            <h6 className='text-2xl tracking-wider py-4'>london</h6>
+            <p className='lg:w-3/4  '>
               first floor office, 3 hornton place, london, united kingdom, W84LZ
             </p>
             <ul>
@@ -47,7 +47,7 @@ function ContactsInfo({ isFooter = false }) {
         {/* dubai */}
         <div className=''>
           <div>
-            <h6 className='text-xl pt-4'>dubai</h6>
+            <h6 className='text-2xl tracking-wider py-4'>dubai</h6>
 
             <p className='lg:w-3/4'>
               #107 Al Solemiyah tower diera dubai, united arab emirates

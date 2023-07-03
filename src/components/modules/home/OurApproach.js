@@ -31,7 +31,9 @@ function OurApproach() {
 
   return (
     // because of no-repeat our background doesn't stretch through whole screen
-    <div className='h-full bg-ourAppBg w-full bg-no-repeat bg-center bg-fixed'>
+    // <div className='h-full bg-ourAppBg w-full bg-no-repeat bg-center bg-fixed'>
+    // this one has a color as background not picture
+    <div className='h-full bg-mainFooterColor w-full bg-no-repeat bg-center bg-fixed'>
       <article className='max-w-6xl mx-auto '>
         <div className='border-b-2 w-full mx-auto  py-10'>
           <h1 className='text-4xl text-mainTxtColor text-center pb-10'>

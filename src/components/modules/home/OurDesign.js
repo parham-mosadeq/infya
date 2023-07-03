@@ -10,9 +10,9 @@ function OurDesign() {
     <>
       <div className='w-full pb-20 mt-16 lg:mt-24 grid'>
         <h1 className=' text-center border-b pb-4 text-3xl text-mainTxtColor tracking-wider '>
-          Our Services <br />{' '}
-          <span className='text-lg font-light lg:font-bold lg:text-xl'>
-            All the services you need, in one place
+          All the services you need <br />
+          <span className='text-lg tracking-widest font-light lg:font-bold lg:text-xl'>
+            in one place
           </span>
         </h1>
         <article className=''>
@@ -39,13 +39,13 @@ function OurDesign() {
                       height={500}
                       alt={item.title}
                     />
-                    <h4
+                    {/* <h4
                       className={`${
                         onHover === item.id && 'hidden'
                       } block w-full font-bold px-1 text-center text-mainFooterColor  text-2xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2`}
                     >
                       {item.title}
-                    </h4>
+                    </h4> */}
                     {onHover === item.id && (
                       <div
                         onMouseEnter={() => setOnHover(onHover)}

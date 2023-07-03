@@ -24,7 +24,7 @@ module.exports = {
       // for fixed bg we need to use this method
       backgroundImage: {
         contactUsBg: 'url(../../public/home-page.jpg)',
-        ourAppBg: 'url(../../public/ourApBG.jpg)',
+        // ourAppBg: 'url(../../public/ourApBG.jpg)',
       },
       backgroundColor: {
         backFilter: 'rgba(0,0,0,0.9)',
