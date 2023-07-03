@@ -11,7 +11,7 @@ function ContactsInfo({ isFooter = false }) {
           isFooter && 'lg:flex lg:justify-end lg:items-center'
         } capitalize`}
       >
-        <div className='ml-2'>
+        <div className={isFooter && 'ml-2'}>
           {/* london */}
           <div className=''>
             <h6 className='text-2xl tracking-wider py-4'>london</h6>
