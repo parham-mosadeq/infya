@@ -13,7 +13,7 @@ function OurServicesPage() {
           Our services
         </h1>
       </div>
-      <article className=' w-full   flex flex-col justify-center items-center'>
+      <article className=' w-full max-w-6xl mx-auto flex flex-col justify-center items-center'>
         {/* Maintenance */}
         {designs.map((item) => {
           const { id, title, href, image, desc } = item;
@@ -41,7 +41,7 @@ function OurServicesPage() {
                     <h3 className='uppercase'>{title}</h3>
                   </div>
                   <div className=''>
-                    <p className='font-light tracking-wider text-sm py-10'>
+                    <p className='font-light text-justify tracking-wider text-sm py-10'>
                       {desc}
                     </p>
                     <Link

@@ -54,7 +54,7 @@ function DesignDetails() {
         <meta name='google' content='notranslate' key='notranslate' />
         <meta name='robots' content='all' />
       </Head>
-      <div className='h-48  bg-fixed flex items-center justify-center w-full bg-ourAppBg bg-no-repeat bg-center bg-cover'>
+      <div className='h-48  bg-fixed flex items-center justify-center w-full bg-mainFooterColor bg-no-repeat bg-center bg-cover'>
         {/* title */}
         <div className='px-2 w-full text-mainTxtColor max-w-6xl '>
           <h1 className='text-2xl uppercase '>{headTitle}</h1>
