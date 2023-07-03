@@ -2,13 +2,15 @@ import { FaWhatsapp } from 'react-icons/fa';
 function ContactsInfo({ isFooter = false }) {
   return (
     <div className='block w-full text-mainTxtColor'>
-      <h3 className='text-5xl capitalize w-fit lg:text-center'>contact us</h3>
+      <h3 className='text-5xl capitalize w-fit -mx-3'>
+        contact us
+      </h3>
       <div>
         {/* <h3 className='text-2xl  w-fit capitalize'>master engineering</h3> */}
       </div>
       <section
         className={`${
-          isFooter && 'lg:flex lg:justify-between lg:items-center'
+          isFooter && 'lg:flex lg:justify-end lg:items-center'
         } capitalize`}
       >
         <div className=''>

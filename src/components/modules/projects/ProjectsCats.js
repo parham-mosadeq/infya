@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import RenderCats from './RenderCats';
 import catDataDB from '../../../../data/catDataDB.json';
-
+import { motion } from 'framer-motion';
 function ProjectsCats() {
   const [selectCat, setSelectCat] = useState('ALL PROJECTS');
   const handleCat = (tags) => setSelectCat(tags);
@@ -20,7 +20,13 @@ function ProjectsCats() {
             selectCat === 'ALL PROJECTS' && 'bg-backFilter'
           } text-mainTxtColor px-3 py-1 hover:bg-backFilter cursor-pointer uppercase`}
         >
-          ALL PROJECTS
+          <motion.span
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.1 }}
+            whileInView={{ opacity: 1 }}
+          >
+            ALL PROJECTS
+          </motion.span>
         </p>
 
         {cat.map((item, idx) => (
@@ -31,7 +37,13 @@ function ProjectsCats() {
             } hover:bg-backFilter px-3 py-1 transition duration-500 cursor-pointer text-mainTxtColor uppercase`}
             key={item}
           >
-            {item}
+            <motion.span
+              initial={{ opacity: 0 }}
+              transition={({ delay: 0.5 }, { type: 'spring', stiffness: 100 })}
+              whileInView={{ opacity: 1 }}
+            >
+              {item}
+            </motion.span>
           </p>
         ))}
         {/* select cats */}

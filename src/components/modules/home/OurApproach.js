@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import { motion } from 'framer-motion';
 function OurApproach() {
   const [selectItem, setSelectItem] = useState(1);
   const items = [
@@ -37,7 +37,13 @@ function OurApproach() {
       <article className='max-w-6xl mx-auto '>
         <div className='border-b-2 w-full mx-auto  py-10'>
           <h1 className='text-4xl text-mainTxtColor text-center pb-10'>
-            OUR APPROACH
+            <motion.span
+              initial={{ opacity: 0 }}
+              transition={{ delay: 0.1 }}
+              whileInView={{ opacity: 1 }}
+            >
+              OUR APPROACH
+            </motion.span>
           </h1>
         </div>
         <section className='py-10 relative '>
@@ -68,7 +74,13 @@ function OurApproach() {
           </div>
           <div className='my-10 border-t w-full mx-auto hidden md:block px-4'>
             <p className=' w-full py-7 mx-auto text-center text-2xl text-mainTxtColor'>
-              {pickDesc.desc}
+              <motion.span
+                initial={{ opacity: 0.4 }}
+                transition={{ delay: 0.4 }}
+                whileInView={{ opacity: 1 }}
+              >
+                {pickDesc.desc}
+              </motion.span>
             </p>
           </div>
         </section>

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import ourDesign from '../../../../data/ourDesDB.json';
+import { motion } from 'framer-motion';
 function OurDesign() {
   const [onHover, setOnHover] = useState(false);
   const baseUrl = '/our-services';
@@ -18,11 +19,17 @@ function OurDesign() {
         <article className=''>
           {/* projects */}
           <div className='my-10 md:grid md:items-center md:justify-center md:content-center md:gap-3 md:grid-cols-2 w-full lg:grid-cols-2 xl:grid-cols-3 md:mx-2 md:w-full overflow-hidden transition duration-500 '>
-            {designs.map((item) => {
+            {designs.map((item, idx) => {
               const lastIndex = item.desc.length / 4;
               const shortDesc = item.desc.slice(0, lastIndex);
               return (
-                <div
+                <motion.div
+                  initial={{ opacity: 0.1 }}
+                  transition={
+                    ({ delay: 2.5 }, { type: 'spring', stiffness: 100 })
+                  }
+                  whileInView={{ opacity: 1 }}
+                  // animations
                   onMouseEnter={() => setOnHover(item.id)}
                   onMouseLeave={() => setOnHover(false)}
                   key={item.id}
@@ -72,7 +79,7 @@ function OurDesign() {
                       </div>
                     )}
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>
