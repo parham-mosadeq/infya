@@ -5,7 +5,7 @@ import Link from 'next/link';
 import FullDesc from './FullDesc';
 import Head from 'next/head';
 function DesignDetails() {
-  const { asPath,pathname } = useRouter();
+  const { asPath, pathname } = useRouter();
   const breadCrumbs = asPath.split('/');
   const { designs } = ourDesign;
   const itemId = +asPath[asPath.length - 1];
@@ -71,10 +71,6 @@ function DesignDetails() {
 
       <article className='max-w-7xl mx-auto flex items-center justify-center flex-col px-4 py-10'>
         {selectedDesign.map((item) => {
-          const midFullDesc = Math.floor(item.fullDesc.length / 2);
-          const firstHalfDesc = item.fullDesc.slice(0, midFullDesc);
-          const lastHalfDesc = item.fullDesc.slice(midFullDesc);
-
           return (
             <div
               key={item.id}
@@ -93,7 +89,7 @@ function DesignDetails() {
                     />
                   </div>
                   <div className='col-span-2'>
-                    <div>
+                    <div className='text-justify'>
                       {/* first */}
                       <FullDesc topic={item.txtKey} />
                     </div>

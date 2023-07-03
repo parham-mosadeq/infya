@@ -38,7 +38,7 @@ function OurServicesPage() {
                 {/* info */}
                 <div className='w-full md:max-w-3xl mx-auto px-4 my-10 text-mainTxtColor'>
                   <div className='font-light py-2'>
-                    <h3 className='uppercase'>{title}</h3>
+                    <h3 className='uppercase text-2xl'>{title}</h3>
                   </div>
                   <div className=''>
                     <p className='font-light text-justify tracking-wider text-sm py-10'>

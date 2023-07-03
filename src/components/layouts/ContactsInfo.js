@@ -11,10 +11,10 @@ function ContactsInfo({ isFooter = false }) {
           isFooter && 'lg:flex lg:justify-end lg:items-center'
         } capitalize`}
       >
-        <div className=''>
+        <div className='ml-2'>
           {/* london */}
           <div className=''>
-            <h6 className='text-xl tracking-wider pb-4'>london</h6>
+            <h6 className='text-2xl tracking-wider py-4'>london</h6>
             <p className='lg:w-3/4  '>
               first floor office, 3 hornton place, london, united kingdom, W84LZ
             </p>
@@ -47,7 +47,7 @@ function ContactsInfo({ isFooter = false }) {
         {/* dubai */}
         <div className=''>
           <div>
-            <h6 className='text-2xl tracking-wider pb-4'>dubai</h6>
+            <h6 className='text-2xl tracking-wider py-4'>dubai</h6>
 
             <p className='lg:w-3/4'>
               #107 Al Solemiyah tower diera dubai, united arab emirates
