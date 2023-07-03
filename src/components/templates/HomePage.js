@@ -4,8 +4,11 @@ import OurDesign from '../modules/home/OurDesign';
 import OurApproach from '../modules/home/OurApproach';
 import TalkWithUs from '../layouts/TalkWithUs';
 import ProjectsPage from './ProjectsPage';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useSpring } from 'framer-motion';
 function HomePage() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress);
+
   return (
     <div className='h-full bg-mainAboutColor relative'>
       <article className='  max-w-6xl w-full  flex flex-col items-center  mx-auto justify-center'>
@@ -18,9 +21,8 @@ function HomePage() {
         <section className='lg:min-h-screen lg:flex lg:flex-col  '>
           {/* about */}
           <motion.article
-            initial={({ opacity: 0.4 }, { x: 10000 })}
-            animate={{ x: 0 }}
-            transition={({ delay: 1.4 }, { type: 'spring', stiffness: 100 })}
+            initial={{ opacity: 0.1 }}
+            transition={({ delay: 1 }, { type: 'spring' })}
             whileInView={{ opacity: 1 }}
           >
             <article className='w-full h-full  lg:flex  '>
@@ -60,21 +62,27 @@ function HomePage() {
 
           {/* our vision */}
           <motion.article
-            initial={({ opacity: 0.9 }, { x: -10000 })}
-            animate={{ x: 0 }}
-            transition={({ delay: 1.2 }, { type: 'spring', stiffness: 100 })}
+            initial={({ opacity: 0.9 }, { y: -10000 })}
+            animate={{ y: 0 }}
+            transition={({ delay: 9 }, { type: 'spring', stiffness: 100 })}
             whileInView={{ opacity: 1 }}
           >
             <article className='w-full h-full lg:flex lg:flex-row-reverse lg:-mb-36 mt-10'>
               <div className='w-full p-0 m-0 mx-auto h-1/2 lg:h-full lg:w-[100%] self-end lg:self-center'>
                 <div className='block w-full h-1/2 lg:h-full'>
-                  <Image
-                    className='block w-full h-full object-cover'
-                    src='/home-page.jpg'
-                    width={500}
-                    height={500}
-                    alt='about us '
-                  />
+                  <motion.div
+                    initial={{ opacity: 0.1 }}
+                    transition={({ delay: 2.4 }, { type: 'spring' })}
+                    whileInView={{ opacity: 1 }}
+                  >
+                    <Image
+                      className='block w-full h-full object-cover'
+                      src='/home-page.jpg'
+                      width={500}
+                      height={500}
+                      alt='about us '
+                    />
+                  </motion.div>
                 </div>
               </div>
               <div className='p-4 text-mainTxtColor lg:w-3/4'>

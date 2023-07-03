@@ -2,7 +2,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 function ContactsInfo({ isFooter = false }) {
   return (
     <div className='block w-full text-mainTxtColor'>
-      <h3 className='text-5xl capitalize w-fit -mx-3'>
+      <h3 className='text-3xl capitalize w-fit -mx-3'>
         contact us
       </h3>
       <div>

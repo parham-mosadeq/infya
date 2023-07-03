@@ -22,7 +22,7 @@ function ProjectsCats() {
         >
           <motion.span
             initial={{ opacity: 0 }}
-            transition={{ delay: 0.1 }}
+            transition={{ delay: 0.9 }}
             whileInView={{ opacity: 1 }}
           >
             ALL PROJECTS
@@ -39,7 +39,7 @@ function ProjectsCats() {
           >
             <motion.span
               initial={{ opacity: 0 }}
-              transition={({ delay: 0.5 }, { type: 'spring', stiffness: 100 })}
+              transition={({ delay: 1 }, { type: 'spring', stiffness: 100 })}
               whileInView={{ opacity: 1 }}
             >
               {item}
